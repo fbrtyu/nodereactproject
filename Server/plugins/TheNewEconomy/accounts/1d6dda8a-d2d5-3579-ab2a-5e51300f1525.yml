@@ -1,0 +1,14 @@
+Info:
+  ID: 1d6dda8a-d2d5-3579-ab2a-5e51300f1525
+  Name: ZALIKS
+  Type: player
+  Status: normal
+  CreationDate: 1717849263355
+  Pin: ''
+  LastOnline: 1717854608694
+Holdings:
+  Main Server:
+    world:
+      57f622e4-4fdd-49c5-aeae-9074fe11591c:
+        tne:ENDER_HOLDINGS: '0'
+        tne:INVENTORY_HOLDINGS: '150.0'

@@ -1,0 +1,139 @@
+messages:
+    Prefix: '&8(&b!&8) &3&l»'
+    Header: '  &f&m+----&3&m----&f&m----&3&m----&f&m----&3&m----&f&m----&3&m----&f&m----&3&m----+'
+    Footer: '  &f&m+----&3&m----&f&m----&3&m----&f&m----&3&m----&f&m----&3&m----&f&m----&3&m----+'
+    Note: '%prefix% &fTo clear all the reports, type &e/reports clear&f.'
+    Reports-Cleared: '%prefix% &fAll reports have been &asuccessfully &fcleared.'
+    Args-Error: '%prefix% &fSorry, but that sub-command doesn''t exist.'
+    No-Permission: '%prefix% &fSorry, but you don''t have permission to do that.'
+    Reloaded: '%prefix% &fYou''ve &asuccessfully &freloaded the configuration.'
+    Reported-Format: '%prefix% &c%player% &fwas reported by &a%reporter% &ffor &a%reason%&f.'
+    Report-Submitted: '%prefix% &a%player% &fhas submitted a report. &8(&e/reports&8)'
+    Click-To-Info: '&7(Click to open the Reports GUI)'
+    Reports-Empty: '%prefix% &fSorry, but no reports have been submitted.'
+    Specify-Reason: '%prefix% &fPlease specify a reason for your report.'
+    Confirm: '%prefix% &fPlease type &e/reports clear &fagain to confirm.'
+    Cant-Report-Yourself: '%prefix% &fSorry, but you can''t make a report on yourself.'
+    Cant-Report-That-Player: '%prefix% &fSorry, but you can''t report %player%.'
+    Max-Reports-Reached: '%prefix% &fSorry, but you can''t have more than %max%x reports at once.'
+    Nothing-To-Clear: '%prefix% &fSorry, but there''s no reports to clear.'
+    Please-Wait: '%prefix% &fSorry, but you must wait another &c%cooldown%s&f.'
+    Report-Usage: '%prefix% &e/report (name) (reason)'
+    Teleport-Message: '%prefix% &fYou have teleported to &a%player%&f.'
+    Player-Has-To-Be-Online: '%prefix% &fSorry, but you can''t report &c%player% &fas they''re not currently online.'
+    Claim-GUI-Not-Set-Up: '%prefix% &fSorry, but that player wasn''t rewarded as they''re offline and you haven''t set up the Reports ClaimGUI. &8(&e/reports setupclaimgui)'
+    On-ClaimGUI-Open-Note: '%prefix% &fPlace the rewards you want players to receive for a completed report if they''re offline at the time of the reports completion.'
+    Claim-GUI-Saved: '%prefix% &fThe &bClaim GUI &fhas been saved.'
+    Report-Is-Already-Complete: '%prefix% &fSorry, but that report is already marked as &aComplete&f.'
+    Report-Must-Be-Complete-To-Delete: '%prefix% &fSorry, but reports must be marked as ''&aComplete&f'' before deleting.'
+    Nothing-To-Claim: '%prefix% &fSorry, but you have nothing to claim.'
+    Report-Is-Not-Complete: '%prefix% &fSorry, but reports but be &aComplete &fto remove them.'
+    Not-In-The-Image-Proof-URL-Whitelist: '%prefix% &fSorry, but &e%link% &fis &cnot &fa supported website. Supported&8: &fImgur, PrntScr, Gyazo, Ibb & Pasteboard.'
+    No-Image-Attached: '%prefix% &fSorry, but there''s no image proof attached to that report.'
+    Proof-Added: '%prefix% &fYou''ve linked your proof image to your report.'
+    Added-URL-To-Whitelist: '%prefix% &fYou &aadded &e%link% &fto the URL whitelist.'
+    Canceled-Providing-Proof-Image: '%prefix% &fYou''ve canceled that report. You need to provide a link to any report you make so that said person you report can''t claim you were lying.'
+    Your-Report-Was-Denied: '%prefix% &fOne of your recent reports has been &cdenied&f.'
+    Link-Format: '%prefix% &e%link%'
+    Provide-Image-Proof:
+    - '%prefix% &fPlease provide a link to an image of proof for your report in chat.'
+    - '%prefix% &fYou can type ''cancel'' to cancel your report.'
+    Player-Reported:
+    - ''
+    - '%header%'
+    - '  %prefix% &fYou''ve &asuccessfully &freported &c%player%&f.'
+    - '  &fReason &3&l» &b%reason%&f.'
+    - '%footer%'
+    - ''
+    You-Have-Report-Rewards: '%prefix% &b&lHey! &fYou have been rewarded from a report! &e/reports claim'
+settings:
+    Inform-Operators: true
+    Max-Reports-Per-Player: 3
+    # Reports that are marked as 'Complete' are not counted.
+    Command-Format: ' &3&l» &e%command% &3&l» &f%usage%'
+    Require-Reported-Player-To-Be-Online: true
+    Save-Reporters-Location: false
+    # This needs to be true to use the %reporter% placeholder in the 'Player-Commands' option
+    Tell-Players-They-Have-Rewards-In-Their-ClaimGUI: true
+    Perform-Commands-On-Report: false
+    Commands-Upon-Reports:
+    - 'staffchat %reporter% reported %reported% for %reason%'
+    Use-Header-&-Footer: true
+    Require-Image-Proof-Link-Before-Report-Creation: false
+    Tell-Reporter-Their-Report-Was-Denied: true
+    # The reporter will only receive a message if they're online at the time of the report being removed.
+    Open-Reports-GUI-Sound:
+        Enabled: false
+        Sound: BLOCK_CHEST_OPEN
+    Open-Claim-GUI-Sound:
+        Enabled: false
+        Sound: BLOCK_CHEST_OPEN
+    Clear-Reports-Timer: 3
+    Submit-Report-Timer: 60
+    # Timers are in seconds
+    Reports-Must-Be-Confirmed-To-Delete: false
+    Remove-Reports:
+        Click-Type: RIGHT
+    Change-Status:
+        Click-Type: MIDDLE
+    Open-Proof-Link:
+        Click-Type: DROP
+    # RIGHT, LEFT, SHIFT_LEFT, SHIFT_RIGHT, MIDDLE, DROP, DOUBLE_CLICK, NUMBER_KEY
+    Statuses:
+        New: '&fNew'
+        WIP: '&eBeing investigated'
+        Complete: '&aComplete'
+    Give-Reporter-Rewards-On-Report-Complete:
+        Enabled: true
+        Reporter-Is-Online:
+        - 'give %reporter% paper 1 name:&fHey,_thanks! lore:&fA_report_you_made_was_successfully_taken_care_of.|&fWe''d_like_to_thank_you_for_being_a_loyal_player!'
+        - 'give %reporter% diamond_block 1 name:&c❤'
+        Reporter-Is-Offline:
+        - 'mail send %reporter% A report you made was successfully taken care of. We''d like to thank you for being a loyal player! Check your Report Claims! /reports claim'
+        # Offline players can receive items by setting up /reports setupclaimgui
+    Image-Proof-URL-Whitelist:
+        - 'imgur.com'
+        - 'i.imgur.com'
+        - 'prntscr.com'
+        - 'gyazo.com'
+        - 'i.gyazo.com'
+        - 'i.ibb.co'
+        - 'ibb.co'
+        - 'pasteboard.co'
+sounds:
+    Enabled: false
+    Report-Submitted: ENTITY_PLAYER_LEVELUP
+    Player-Reported-Notification: BLOCK_ANVIL_FALL
+GUI:
+    Name: '&cReports'
+    Size: 54
+    Default-Item:
+        Player-Commands:
+        - 'teleport %player%'
+        # Here's the format for when you want to where the report was created.
+        # Note: Does require the setting "Save-Reporters-Location" to be enabled. (!Disabled by default!)
+        # - 'teleport %reporter%
+        Material: PAPER
+        Name: '&a%reported%'
+        Lore:
+        - ''
+        - ' &e» &fStatus &6» %status%'
+        - ''
+        - ' &e» &fSubmitted by &6» &b%reporter%'
+        - ' &e» &fReported &6» &c%reported%'
+        - ''
+        - '&7(Left-Click to teleport to %reported%)'
+        - '&7(Right-Click to remove this Report)'
+        - '&7(Middle-Click to update the report status)'
+        - '&7(Drop to see if a proof image is attached)'
+        - ''
+        - ' &e» &fReason &6»'
+        - ''
+        Report-Reason-Color: '&b'
+        # The reports reason is listed below. (No longer a placeholder due to bugs)
+ClaimGUI:
+    Name: '&bClaim GUI'
+    Size: 27
+    Players-View:
+        Name: '&fYour Report Rewards'
+        Size: 27

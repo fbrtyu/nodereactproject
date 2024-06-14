@@ -1,0 +1,359 @@
+[15:20:19] [ServerMain/INFO]: Environment: Environment[accountsHost=https://api.mojang.com, sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, name=PROD]
+[15:20:22] [ServerMain/INFO]: Loaded 7 recipes
+[15:20:22] [Server thread/INFO]: Starting minecraft server version 1.20.2
+[15:20:22] [Server thread/INFO]: Loading properties
+[15:20:22] [Server thread/INFO]: This server is running Purpur version git-Purpur-2084 (MC: 1.20.2) (Implementing API version 1.20.2-R0.1-SNAPSHOT) (Git: 85e34e5 on HEAD)
+[15:20:23] [Server thread/INFO]: Using 4 threads for Netty based IO
+[15:20:23] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[15:20:24] [Server thread/INFO]: [ChunkTaskScheduler] Chunk system is using 1 I/O threads, 3 worker threads, and gen parallelism of 3 threads
+[15:20:24] [Server thread/WARN]: [Pufferfish] Will not enable SIMD! These optimizations are only safely supported on Java 17, Java 18, and Java 19.
+[15:20:24] [Server thread/INFO]: Default game type: SURVIVAL
+[15:20:24] [Server thread/INFO]: Generating keypair
+[15:20:24] [Server thread/INFO]: Starting Minecraft server on *:25565
+[15:20:24] [Server thread/INFO]: Using default channel type
+[15:20:25] [Server thread/INFO]: Paper: Using Java compression from Velocity.
+[15:20:25] [Server thread/INFO]: Paper: Using Java cipher from Velocity.
+[15:20:25] [Server thread/INFO]: [FramedImage] Using folia scheduler
+[15:20:25] [Server thread/WARN]: [org.bukkit.craftbukkit.v1_20_R2.legacy.CraftLegacy] Initializing Legacy Material Support. Unless you have legacy plugins and/or data this is a bug!
+[15:20:30] [Server thread/WARN]: Legacy plugin Dynmap-SimpleClans v2.0.2 does not specify an api-version.
+[15:20:30] [Server thread/INFO]: [LuckPerms] Loading server plugin LuckPerms v5.4.106
+[15:20:31] [Server thread/INFO]: [Vault] Loading server plugin Vault v1.7.3-b131
+[15:20:31] [Server thread/INFO]: [FastAsyncWorldEdit] Loading server plugin FastAsyncWorldEdit v2.8.3-SNAPSHOT-605;1996a38
+[15:20:32] [Server thread/INFO]: Got request to register class com.sk89q.worldedit.bukkit.BukkitServerInterface with WorldEdit [com.sk89q.worldedit.extension.platform.PlatformManager@b36abe]
+[15:20:32] [Server thread/INFO]: [PlaceholderAPI] Loading server plugin PlaceholderAPI v2.11.5
+[15:20:32] [Server thread/INFO]: [WorldGuard] Loading server plugin WorldGuard v7.0.9+5934e49
+[15:20:32] [Server thread/INFO]: [SkinsRestorer] Loading server plugin SkinsRestorer v15.0.13
+[15:20:32] [Server thread/INFO]: [Essentials] Loading server plugin Essentials v2.21.0-dev+19-3eceec8
+[15:20:32] [Server thread/INFO]: [SimpleClans] Loading server plugin SimpleClans v2.19.2-05e7abc
+[15:20:32] [Server thread/INFO]: [dynmap] Loading server plugin dynmap v3.7-beta-2-923
+[15:20:32] [Server thread/INFO]: [dynmap] version=git-Purpur-2084 (MC: 1.20.2)
+[15:20:33] [Server thread/INFO]: [dynmap] Mod Support API available
+[15:20:33] [Server thread/INFO]: [EssentialsSpawn] Loading server plugin EssentialsSpawn v2.21.0-dev+19-3eceec8
+[15:20:33] [Server thread/INFO]: [spark] Loading server plugin spark v1.10.67
+[15:20:33] [Server thread/INFO]: [TheNewEconomy] Loading server plugin TheNewEconomy v0.1.2.0
+[15:20:33] [Server thread/INFO]: [TheNewEconomy] Hooked into Vault
+[15:20:33] [Server thread/INFO]: [TimeIsMoney] Loading server plugin TimeIsMoney v1.9.9
+[15:20:33] [Server thread/INFO]: [TAB] Loading server plugin TAB v4.0.7
+[15:20:33] [Server thread/INFO]: [PlayerReport] Loading server plugin PlayerReport v3.4.3
+[15:20:33] [Server thread/INFO]: [MyCommand] Loading server plugin MyCommand v5.7.4
+[15:20:33] [Server thread/INFO]: [FramedImage] Loading server plugin FramedImage v1.7.0
+[15:20:33] [Server thread/INFO]: [EssentialsChat] Loading server plugin EssentialsChat v2.21.0-dev+19-3eceec8
+[15:20:33] [Server thread/INFO]: [Dynmap-SimpleClans] Loading server plugin Dynmap-SimpleClans v2.0.2
+[15:20:33] [Server thread/INFO]: [DeluxeMenus] Loading server plugin DeluxeMenus v1.13.7-Release
+[15:20:33] [Server thread/WARN]: [DeluxeMenus] Could not setup a NMS hook for your server version!
+[15:20:33] [Server thread/INFO]: [Chunky] Loading server plugin Chunky v1.3.92
+[15:20:33] [Server thread/INFO]: [ChestShop] Loading server plugin ChestShop v3.12.2 (build 353)
+[15:20:33] [Server thread/INFO]: [ChestShop] WorldGuard version 7.0.9+5934e49 loaded.
+[15:20:33] [Server thread/INFO]: [BetterRTP] Loading server plugin BetterRTP v3.6.11
+[15:20:33] [Server thread/INFO]: [AuthMe] Loading server plugin AuthMe v5.6.0-beta2-b2453
+[15:20:33] [Server thread/INFO]: [AncientGates] Loading server plugin AncientGates v2.6.1
+[15:20:33] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[15:20:33] [Server thread/INFO]: [LuckPerms] Enabling LuckPerms v5.4.106
+[15:20:34] [Server thread/INFO]:         __    
+[15:20:34] [Server thread/INFO]:   |    |__)   LuckPerms v5.4.106
+[15:20:34] [Server thread/INFO]:   |___ |      Running on Bukkit - Purpur
+[15:20:34] [Server thread/INFO]: 
+[15:20:34] [Server thread/INFO]: [LuckPerms] Loading configuration...
+[15:20:34] [Server thread/INFO]: [LuckPerms] Loading storage provider... [H2]
+[15:20:35] [Server thread/INFO]: [LuckPerms] Loading internal permission managers...
+[15:20:35] [Server thread/INFO]: [LuckPerms] Performing initial data load...
+[15:20:35] [Server thread/INFO]: [LuckPerms] Successfully enabled. (took 2482ms)
+[15:20:35] [Server thread/INFO]: [Vault] Enabling Vault v1.7.3-b131
+[15:20:35] [Server thread/INFO]: [Vault] [Economy] Essentials Economy found: Waiting
+[15:20:35] [Server thread/INFO]: [Vault] [Permission] SuperPermissions loaded as backup permission system.
+[15:20:35] [Server thread/INFO]: [Vault] Enabled Version 1.7.3-b131
+[15:20:35] [Server thread/INFO]: [LuckPerms] Registered Vault permission & chat hook.
+[15:20:35] [Server thread/INFO]: [FastAsyncWorldEdit] Enabling FastAsyncWorldEdit v2.8.3-SNAPSHOT-605;1996a38
+[15:20:36] [Server thread/INFO]: [com.fastasyncworldedit.core.Fawe] LZ4 Compression Binding loaded successfully
+[15:20:36] [Server thread/INFO]: [com.fastasyncworldedit.core.Fawe] ZSTD Compression Binding loaded successfully
+[15:20:36] [Server thread/INFO]: Registering commands with com.sk89q.worldedit.bukkit.BukkitServerInterface
+[15:20:36] [Server thread/INFO]: WEPIF: Vault detected! Using Vault for permissions
+[15:20:36] [Server thread/INFO]: Using com.sk89q.worldedit.bukkit.adapter.impl.fawe.v1_20_R2.PaperweightFaweAdapter as the Bukkit adapter
+[15:20:37] [Server thread/INFO]: [SkinsRestorer] Enabling SkinsRestorer v15.0.13
+[15:20:37] [ForkJoinPool.commonPool-worker-1/WARN]: [com.fastasyncworldedit.core.util.UpdateNotification] An update for FastAsyncWorldEdit is available. You are 188 build(s) out of date.
+You are running build 605, the latest version is build 793.
+Update at https://www.spigotmc.org/resources/13932/
+[15:20:38] [Server thread/INFO]: [SkinsRestorer] Running on Minecraft 1.20.2.
+[15:20:38] [Server thread/INFO]: [PlaceholderAPI] Successfully registered internal expansion: skinsrestorer [15.0.13]
+[15:20:38] [Server thread/INFO]: [SkinsRestorer] PlaceholderAPI expansion registered!
+[15:20:38] [Server thread/INFO]: [SkinsRestorer] Using paper join listener!
+[15:20:38] [Server thread/WARN]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+[15:20:38] [Server thread/WARN]: The server will make no attempt to authenticate usernames. Beware.
+[15:20:38] [Server thread/WARN]: While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+[15:20:38] [Server thread/WARN]: To change this, set "online-mode" to "true" in the server.properties file.
+[15:20:38] [Server thread/INFO]: Preparing level "world"
+[15:20:38] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer] ----------------------------------------------
+[15:20:38] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer]     +==================+
+[15:20:38] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer]     |   SkinsRestorer  |
+[15:20:38] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer]     |------------------|
+[15:20:38] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer]     |  Standalone Mode |
+[15:20:38] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer]     +==================+
+[15:20:38] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer] ----------------------------------------------
+[15:20:38] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer]     Version: 15.0.13
+[15:20:38] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer]     Commit: 8e4c6e2
+[15:20:38] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer]     This is the latest version!
+[15:20:38] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer] ----------------------------------------------
+[15:20:39] [Server thread/INFO]: Preparing start region for dimension minecraft:overworld
+[15:20:40] [Server thread/INFO]: Time elapsed: 457 ms
+[15:20:40] [Server thread/INFO]: Preparing start region for dimension minecraft:the_nether
+[15:20:40] [Server thread/INFO]: Time elapsed: 47 ms
+[15:20:40] [Server thread/INFO]: Preparing start region for dimension minecraft:the_end
+[15:20:40] [Server thread/INFO]: Time elapsed: 34 ms
+[15:20:40] [Server thread/INFO]: [PlaceholderAPI] Enabling PlaceholderAPI v2.11.5
+[15:20:40] [Server thread/INFO]: [PlaceholderAPI] Fetching available expansion information...
+[15:20:40] [Server thread/INFO]: [WorldGuard] Enabling WorldGuard v7.0.9+5934e49
+[15:20:40] [Server thread/INFO]: [WorldGuard] (world) TNT ignition is PERMITTED.
+[15:20:40] [Server thread/INFO]: [WorldGuard] (world) Lighters are PERMITTED.
+[15:20:40] [Server thread/INFO]: [WorldGuard] (world) Lava fire is PERMITTED.
+[15:20:40] [Server thread/INFO]: [WorldGuard] (world) Fire spread is UNRESTRICTED.
+[15:20:40] [Server thread/INFO]: [WorldGuard] Loaded configuration for world 'world'
+[15:20:40] [Server thread/INFO]: [WorldGuard] (world_nether) TNT ignition is PERMITTED.
+[15:20:40] [Server thread/INFO]: [WorldGuard] (world_nether) Lighters are PERMITTED.
+[15:20:40] [Server thread/INFO]: [WorldGuard] (world_nether) Lava fire is PERMITTED.
+[15:20:40] [Server thread/INFO]: [WorldGuard] (world_nether) Fire spread is UNRESTRICTED.
+[15:20:40] [Server thread/INFO]: [WorldGuard] Loaded configuration for world 'world_nether'
+[15:20:40] [Server thread/INFO]: [WorldGuard] (world_the_end) TNT ignition is PERMITTED.
+[15:20:40] [Server thread/INFO]: [WorldGuard] (world_the_end) Lighters are PERMITTED.
+[15:20:40] [Server thread/INFO]: [WorldGuard] (world_the_end) Lava fire is PERMITTED.
+[15:20:40] [Server thread/INFO]: [WorldGuard] (world_the_end) Fire spread is UNRESTRICTED.
+[15:20:40] [Server thread/INFO]: [WorldGuard] Loaded configuration for world 'world_the_end'
+[15:20:40] [Server thread/INFO]: [WorldGuard] Loading region data...
+[15:20:41] [Server thread/INFO]: [Essentials] Enabling Essentials v2.21.0-dev+19-3eceec8
+[15:20:42] [Server thread/INFO]: [Essentials] Attempting to convert old kits in config.yml to new kits.yml
+[15:20:42] [Server thread/INFO]: [Essentials] No kits found to migrate.
+[15:20:42] [Server thread/INFO]: [Essentials] Loaded 39094 items from items.json.
+[15:20:42] [Server thread/INFO]: [Essentials] Using locale ru_RU
+[15:20:42] [Server thread/INFO]: [Essentials] ServerListPingEvent: Spigot iterator API
+[15:20:42] [Server thread/INFO]: [Essentials] Starting Metrics. Opt-out using the global bStats config.
+[15:20:42] [Server thread/INFO]: [Vault] [Economy] Essentials Economy hooked.
+[15:20:42] [Server thread/INFO]: [Essentials] Using Vault based permissions (LuckPerms)
+[15:20:42] [Server thread/INFO]: [SimpleClans] Enabling SimpleClans v2.19.2-05e7abc
+[15:20:42] [Server thread/INFO]: [SimpleClans] SQLite Connection successful
+[15:20:42] [Server thread/INFO]: [SimpleClans] Registering 4 chat handlers...
+[15:20:43] [Server thread/INFO]: [SimpleClans] [ACF] Enabled Asynchronous Tab Completion Support!
+[15:20:43] [Server thread/INFO]: [SimpleClans] Registering 12 command contexts...
+[15:20:43] [Server thread/INFO]: [SimpleClans] Registering 15 base commands...
+[15:20:43] [Server thread/INFO]: [SimpleClans] Registering 32 command conditions...
+[15:20:43] [Server thread/INFO]: [SimpleClans] Registering 19 command completions...
+[15:20:43] [Server thread/INFO]: [SimpleClans] Multithreading: true
+[15:20:43] [Server thread/INFO]: [SimpleClans] BungeeCord: false
+[15:20:43] [Server thread/INFO]: [SimpleClans] HEX support: true
+[15:20:43] [Server thread/INFO]: [SimpleClans] Help us translate SimpleClans to your language! Access https://crowdin.com/project/simpleclans/
+[15:20:43] [Server thread/INFO]: [SimpleClans] PlaceholderAPI found. Registering hook...
+[15:20:43] [Server thread/INFO]: [SimpleClans] Registering 7 placeholder resolvers...
+[15:20:43] [Server thread/INFO]: [PlaceholderAPI] Successfully registered internal expansion: simpleclans [2.19.2-05e7abc]
+[15:20:43] [Server thread/INFO]: [dynmap] Enabling dynmap v3.7-beta-2-923
+[15:20:43] [Server thread/INFO]: [dynmap] Added 20 custom biome mappings
+[15:20:43] [Server thread/INFO]: [dynmap] Using LuckPerms 5.4.106 for access control
+[15:20:44] [Server thread/INFO]: [dynmap] Mod Support processing completed
+[15:20:46] [Server thread/INFO]: [dynmap] Loaded 27 shaders.
+[15:20:46] [Server thread/INFO]: [dynmap] Loaded 83 perspectives.
+[15:20:46] [Server thread/INFO]: [dynmap] Loaded 22 lightings.
+[15:20:46] [Server thread/INFO]: [dynmap] Starting enter/exit processing
+[15:20:46] [Dynmap Render Thread/INFO]: [dynmap] Finish marker initialization
+[15:20:46] [Server thread/INFO]: [dynmap] Web server started on address 0.0.0.0:8123
+[15:20:46] [Server thread/INFO]: [dynmap] version 3.7-beta-2-923 is enabled - core version 3.7-beta-2-923
+[15:20:46] [Server thread/INFO]: [dynmap] For support, visit our Discord at https://discord.gg/s3rd5qn
+[15:20:46] [Server thread/INFO]: [dynmap] For news, visit https://reddit.com/r/Dynmap or follow https://universeodon.com/@dynmap
+[15:20:46] [Server thread/INFO]: [dynmap] To report or track bugs, visit https://github.com/webbukkit/dynmap/issues
+[15:20:46] [Server thread/INFO]: [dynmap] If you'd like to donate, please visit https://www.patreon.com/dynmap or https://ko-fi.com/michaelprimm
+[15:20:46] [Server thread/INFO]: [dynmap] Loaded 3 maps of world 'world'.
+[15:20:46] [Server thread/INFO]: [dynmap] Loaded 85 pending tile renders for world 'world'
+[15:20:46] [Server thread/INFO]: [dynmap] Loaded 2 maps of world 'world_nether'.
+[15:20:46] [Server thread/INFO]: [dynmap] Loaded 2 maps of world 'world_the_end'.
+[15:20:46] [Server thread/INFO]: [dynmap] Enabled
+[15:20:46] [Server thread/INFO]: [EssentialsSpawn] Enabling EssentialsSpawn v2.21.0-dev+19-3eceec8
+[15:20:46] [Server thread/INFO]: [EssentialsSpawn] Starting Metrics. Opt-out using the global bStats config.
+[15:20:46] [Server thread/INFO]: [spark] Enabling spark v1.10.67
+[15:20:47] [Server thread/INFO]: [spark] Using Paper ServerTickStartEvent for tick monitoring
+[15:20:47] [Server thread/INFO]: [PlaceholderAPI] Successfully registered internal expansion: spark [1.10.67]
+[15:20:47] [Server thread/INFO]: [spark] Registered PlaceholderAPI placeholders
+[15:20:47] [Server thread/INFO]: [TheNewEconomy] Enabling TheNewEconomy v0.1.2.0
+[15:20:47] [Server thread/INFO]: [TheNewEconomy] Loading configurations!
+[15:20:47] [Dynmap Render Thread/INFO]: [dynmap] Loading default resource pack
+[15:20:47] [Server thread/INFO]: [TheNewEconomy] Attempting to load currency: USD.yml
+[15:20:48] [Server thread/INFO]: [PlaceholderAPI] Successfully registered internal expansion: TNE [0.1.2.0]
+[15:20:48] [Server thread/INFO]: [TheNewEconomy] The New Economy has been enabled!
+[15:20:48] [Server thread/INFO]: [TimeIsMoney] Enabling TimeIsMoney v1.9.9
+[15:20:48] [Server thread/INFO]: [PlaceholderAPI] Successfully registered internal expansion: tim [1.9.9]
+[15:20:48] [Server thread/INFO]: [TimeIsMoney] [TimeIsMoney] &aLoaded 1 Payouts!
+[15:20:48] [Server thread/INFO]: [TimeIsMoney] Time is Money: Essentials found. Hook in it -> Will use Essentials's AFK feature if afk is enabled.
+[15:20:48] [Server thread/INFO]: [TimeIsMoney] §aTime is Money §2v1.9.9 §astarted.
+[15:20:48] [Server thread/INFO]: [TAB] Enabling TAB v4.0.7
+[15:20:49] [Server thread/INFO]: [PlaceholderAPI] Successfully registered internal expansion: tab [4.0.7]
+[15:20:49] [Server thread/INFO]: [TAB] Enabled in 352ms
+[15:20:49] [Server thread/INFO]: [PlayerReport] Enabling PlayerReport v3.4.3
+[15:20:49] [Server thread/INFO]: [MyCommand] Enabling MyCommand v5.7.4
+[15:20:49] [Server thread/INFO]: *-=-=-=-=-=-=-=-=-* MyCommand v.5.7.4*-=-=-=-=-=-=-=-=-=-*
+[15:20:49] [Server thread/INFO]: | Hooked on Vault 1.7.3-b131
+[15:20:49] [Server thread/INFO]: | Command file(s) found : 1
+[15:20:49] [Server thread/INFO]: | Config : Ready.
+[15:20:49] [Server thread/INFO]: | ProtocolLib not found.
+[15:20:49] [Server thread/INFO]: [PlaceholderAPI] Successfully registered internal expansion: mycommand [1.0.0]
+[15:20:49] [Server thread/INFO]: | Placeholder_API : Hooked, Ok.
+[15:20:49] [Server thread/INFO]: | Custom commands loaded : 44
+[15:20:49] [Server thread/INFO]: | You're running the latest version of MyCommand.
+[15:20:49] [Server thread/INFO]: |          by emmerrei a.k.a. ivanfromitaly.           
+[15:20:49] [Server thread/INFO]: *-=-=-=-=-=-=-=-=-=-*   Done!   *-=-=-=-=-=-=-=-=-=-=-*
+[15:20:49] [Server thread/INFO]: [FramedImage] Enabling FramedImage v1.7.0
+[15:20:49] [Server thread/INFO]: [FramedImage] Successfully injected!
+[15:20:49] [Server thread/INFO]: [EssentialsChat] Enabling EssentialsChat v2.21.0-dev+19-3eceec8
+[15:20:49] [Server thread/INFO]: [EssentialsChat] Starting Metrics. Opt-out using the global bStats config.
+[15:20:49] [Server thread/INFO]: [Dynmap-SimpleClans] Enabling Dynmap-SimpleClans v2.0.2*
+[15:20:49] [Server thread/WARN]: @EventHandler method net.sacredlabyrinth.phaed.dynmap.simpleclans.DynmapSimpleClansListener#onKill returns non-void type kotlin.Unit. This is unsupported behavior and will no longer work in a future version of Paper. This should be reported to the developers of Dynmap-SimpleClans v2.0.2 (phaed,RoinujNosde,Minat0_)
+[15:20:49] [Server thread/INFO]: [DeluxeMenus] Enabling DeluxeMenus v1.13.7-Release
+[15:20:49] [Server thread/INFO]: [DeluxeMenus] Successfully hooked into PlaceholderAPI!
+[15:20:49] [Server thread/INFO]: [DeluxeMenus] 3 GUI menus loaded!
+[15:20:49] [Server thread/INFO]: [DeluxeMenus] Successfully hooked into Vault!
+[15:20:49] [Server thread/INFO]: [PlaceholderAPI] Successfully registered internal expansion: deluxemenus [1.13.7-Release]
+[15:20:49] [Server thread/INFO]: [Chunky] Enabling Chunky v1.3.92
+[15:20:49] [Server thread/INFO]: [ChestShop] Enabling ChestShop v3.12.2 (build 353)
+[15:20:50] [Server thread/INFO]: [ChestShop] Found locales ar, it, es, el, hu, fr, pl, cs, pt_br, ja, sv, da, es_mx, sr, tr, nl, zh_tw, af, ko, no, vi, ro, he, ru, ca, zh, de, fi, en, uk
+[15:20:50] [Server thread/INFO]: [ChestShop] Using TheNewEconomy as the Economy provider now.
+[15:20:50] [Server thread/INFO]: [ChestShop] Vault loaded!
+[15:20:50] [Server thread/INFO]: [ChestShop] Using Paper's BlockDestroyEvent instead of the BlockPhysicsEvent!
+[15:20:50] [Server thread/INFO]: [ChestShop] Auto-updater is disabled. If you want the plugin to automatically download new releases then set 'TURN_OFF_UPDATES' to 'false' in your config.yml!
+[15:20:50] [Server thread/INFO]: [BetterRTP] Enabling BetterRTP v3.6.11
+[15:20:51] [Server thread/INFO]: [BetterRTP] Cooldown = 600
+[15:20:51] [Server thread/INFO]: [PlaceholderAPI] Successfully registered internal expansion: betterrtp [3.6.11]
+[15:20:51] [Server thread/INFO]: [AuthMe] Enabling AuthMe v5.6.0-beta2-b2453
+[15:20:51] [Server thread/INFO]: [AuthMe] SQLite Setup finished
+[15:20:51] [Server thread/INFO]: [AuthMe] Hooked into LuckPerms!
+[15:20:51] [Server thread/INFO]: [AuthMe] Hooked successfully into Essentials
+[15:20:51] [Server thread/INFO]: [AuthMe] Essentials spawn file not found: 'C:\Users\zaliks\Desktop\GitHub\MinecraftProject\Server\plugins\Essentials\spawn.yml'
+[15:20:51] [Server thread/WARN]: [AuthMe] WARNING! The protectInventory feature requires ProtocolLib! Disabling it...
+[15:20:51] [Server thread/INFO]: [AuthMe] AuthMe 5.6.0-beta2 build n.2453 successfully enabled!
+[15:20:51] [Server thread/INFO]: [AncientGates] Enabling AncientGates v2.6.1
+[15:20:51] [Server thread/INFO]: [AncientGates] Loading conf from disk
+[15:20:51] [Server thread/INFO]: [AncientGates] Enabling bungeecord channels
+[15:20:51] [Server thread/INFO]: [AncientGates] Socket comms disabled. Using generic BungeeCord messaging.
+[15:20:51] [Server thread/INFO]: [AncientGates] Enabled (133 ms)
+[15:20:52] [Server thread/INFO]: [PlaceholderAPI] Placeholder expansion registration initializing...
+[15:20:52] [Server thread/INFO]: 0 placeholder hook(s) registered!
+[15:20:52] [Server thread/INFO]: Running delayed init tasks
+[15:20:52] [Craft Scheduler Thread - 1 - Essentials/INFO]: [Essentials] Получение информации о версии...
+[15:20:52] [Craft Scheduler Thread - 11 - AuthMe/INFO]: [AuthMe] Downloading GEO IP database, because the old database is older than 30 days or doesn't exist
+[15:20:52] [Craft Scheduler Thread - 11 - AuthMe/WARN]: [AuthMe] No MaxMind credentials found in the configuration file! GeoIp protections will be disabled.
+[15:20:52] [Craft Scheduler Thread - 11 - AuthMe/INFO]: [AuthMe] There is no newer GEO IP database uploaded to MaxMind. Using the old one for now.
+[15:20:52] [Server thread/INFO]: [com.fastasyncworldedit.bukkit.regions.WorldGuardFeature] Plugin 'WorldGuard' found. Using it now.
+[15:20:52] [Server thread/INFO]: [com.fastasyncworldedit.bukkit.FaweBukkit] Attempting to use plugin 'WorldGuard'
+[15:20:52] [Craft Scheduler Thread - 11 - AuthMe/WARN]: [AuthMe] Could not download GeoLiteAPI database [FileNotFoundException]: plugins\AuthMe\GeoLite2-Country.mmdb (Не удается найти указанный файл)
+[15:20:52] [Server thread/INFO]: [Essentials] Essentials found a compatible payment resolution method: Vault Compatibility Layer (v1.7.3-b131)!
+[15:20:52] [Server thread/INFO]: [SimpleClans] Registered WorldGuardProvider successfully
+[15:20:52] [Server thread/WARN]: [SimpleClans] Error registering provider WorldGuard6Provider
+[15:20:52] [Server thread/INFO]: [AncientGates] Loading gates from disk
+[15:20:52] [Server thread/INFO]: [AncientGates] Loading gates into memory
+[15:20:52] [Server thread/INFO]: [AncientGates] Finished loading gates - 11 ms
+[15:20:52] [Server thread/INFO]: Done (29.973s)! For help, type "help"
+[15:20:52] [Craft Scheduler Thread - 17 - Vault/INFO]: [Vault] Checking for Updates ... 
+[15:20:52] [Craft Scheduler Thread - 17 - Vault/INFO]: [Vault] No new version available
+[15:20:52] [Server thread/INFO]: [FramedImage] Loading 0 images.
+[15:20:53] [Server thread/INFO]: [PlaceholderAPI] An update for PlaceholderAPI (v2.11.6) is available at:
+[15:20:53] [Server thread/INFO]: [PlaceholderAPI] https://www.spigotmc.org/resources/placeholderapi.6245/
+[15:20:53] [Craft Scheduler Thread - 1 - Essentials/WARN]: [Essentials] Вы отстаете на 74 сборок EssentialsX!
+[15:20:53] [Craft Scheduler Thread - 1 - Essentials/WARN]: [Essentials] Скачайте её отсюда: https://essentialsx.net/downloads.html
+[15:21:02] [Netty Server IO #1/INFO]: [FramedImage] ZALIKS has connected with protocol 764 (1.20.2)
+[15:21:02] [User Authenticator #0/INFO]: UUID of player ZALIKS is 1d6dda8a-d2d5-3579-ab2a-5e51300f1525
+[15:21:03] [Server thread/INFO]: [SimpleClans] [ACF] Can't read players locale, you will be unable to automatically detect players language. Only Bukkit 1.7+ is supported for this.
+[15:21:03] [Server thread/INFO]: [SimpleClans] [ACF] java.lang.NoSuchFieldException: locale
+[15:21:03] [Server thread/INFO]: [SimpleClans] [ACF] 	at java.base/java.lang.Class.getDeclaredField(Class.java:2707)
+[15:21:03] [Server thread/INFO]: [SimpleClans] [ACF] 	at SimpleClans.jar//net.sacredlabyrinth.phaed.simpleclans.acf.BukkitCommandManager.readPlayerLocale(BukkitCommandManager.java:324)
+[15:21:03] [Server thread/INFO]: [SimpleClans] [ACF] 	at SimpleClans.jar//net.sacredlabyrinth.phaed.simpleclans.acf.ACFBukkitListener.onPlayerJoin(ACFBukkitListener.java:57)
+[15:21:03] [Server thread/INFO]: [SimpleClans] [ACF] 	at com.destroystokyo.paper.event.executor.MethodHandleEventExecutor.execute(MethodHandleEventExecutor.java:40)
+[15:21:03] [Server thread/INFO]: [SimpleClans] [ACF] 	at co.aikar.timings.TimedEventExecutor.execute(TimedEventExecutor.java:77)
+[15:21:03] [Server thread/INFO]: [SimpleClans] [ACF] 	at org.bukkit.plugin.RegisteredListener.callEvent(RegisteredListener.java:70)
+[15:21:03] [Server thread/INFO]: [SimpleClans] [ACF] 	at io.papermc.paper.plugin.manager.PaperEventManager.callEvent(PaperEventManager.java:54)
+[15:21:03] [Server thread/INFO]: [SimpleClans] [ACF] 	at io.papermc.paper.plugin.manager.PaperPluginManagerImpl.callEvent(PaperPluginManagerImpl.java:126)
+[15:21:03] [Server thread/INFO]: [SimpleClans] [ACF] 	at org.bukkit.plugin.SimplePluginManager.callEvent(SimplePluginManager.java:617)
+[15:21:03] [Server thread/INFO]: [SimpleClans] [ACF] 	at net.minecraft.server.players.PlayerList.a(PlayerList.java:325)
+[15:21:03] [Server thread/INFO]: [SimpleClans] [ACF] 	at net.minecraft.server.network.ServerConfigurationPacketListenerImpl.a(ServerConfigurationPacketListenerImpl.java:130)
+[15:21:03] [Server thread/INFO]: [SimpleClans] [ACF] 	at net.minecraft.network.protocol.configuration.ServerboundFinishConfigurationPacket.a(ServerboundFinishConfigurationPacket.java:18)
+[15:21:03] [Server thread/INFO]: [SimpleClans] [ACF] 	at net.minecraft.network.protocol.configuration.ServerboundFinishConfigurationPacket.a(ServerboundFinishConfigurationPacket.java:9)
+[15:21:03] [Server thread/INFO]: [SimpleClans] [ACF] 	at net.minecraft.network.protocol.PlayerConnectionUtils.lambda$ensureRunningOnSameThread$0(PlayerConnectionUtils.java:53)
+[15:21:03] [Server thread/INFO]: [SimpleClans] [ACF] 	at net.minecraft.server.TickTask.run(TickTask.java:18)
+[15:21:03] [Server thread/INFO]: [SimpleClans] [ACF] 	at net.minecraft.util.thread.IAsyncTaskHandler.d(IAsyncTaskHandler.java:153)
+[15:21:03] [Server thread/INFO]: [SimpleClans] [ACF] 	at net.minecraft.util.thread.IAsyncTaskHandlerReentrant.d(IAsyncTaskHandlerReentrant.java:24)
+[15:21:03] [Server thread/INFO]: [SimpleClans] [ACF] 	at net.minecraft.server.MinecraftServer.b(MinecraftServer.java:1351)
+[15:21:03] [Server thread/INFO]: [SimpleClans] [ACF] 	at net.minecraft.server.MinecraftServer.d(MinecraftServer.java:193)
+[15:21:03] [Server thread/INFO]: [SimpleClans] [ACF] 	at net.minecraft.util.thread.IAsyncTaskHandler.x(IAsyncTaskHandler.java:126)
+[15:21:03] [Server thread/INFO]: [SimpleClans] [ACF] 	at net.minecraft.server.MinecraftServer.bg(MinecraftServer.java:1328)
+[15:21:03] [Server thread/INFO]: [SimpleClans] [ACF] 	at net.minecraft.server.MinecraftServer.x(MinecraftServer.java:1321)
+[15:21:03] [Server thread/INFO]: [SimpleClans] [ACF] 	at net.minecraft.util.thread.IAsyncTaskHandler.c(IAsyncTaskHandler.java:136)
+[15:21:03] [Server thread/INFO]: [SimpleClans] [ACF] 	at net.minecraft.server.MinecraftServer.u_(MinecraftServer.java:1299)
+[15:21:03] [Server thread/INFO]: [SimpleClans] [ACF] 	at net.minecraft.server.MinecraftServer.w(MinecraftServer.java:1187)
+[15:21:03] [Server thread/INFO]: [SimpleClans] [ACF] 	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:320)
+[15:21:03] [Server thread/INFO]: [SimpleClans] [ACF] 	at java.base/java.lang.Thread.run(Thread.java:1623)
+[15:21:03] [Server thread/INFO]: ZALIKS joined the game
+[15:21:03] [Server thread/INFO]: ZALIKS[/127.0.0.1:60291] logged in with entity id 250 at ([world]-265.8501829649858, 66.0, 382.42615194649784)
+[15:21:11] [Craft Scheduler Thread - 4 - AuthMe/INFO]: [AuthMe] The user ZALIKS has 2 accounts:
+[15:21:11] [Craft Scheduler Thread - 4 - AuthMe/INFO]: [AuthMe] §7zaliksplay, §aZALIKS§7.
+[15:21:11] [Craft Scheduler Thread - 4 - AuthMe/INFO]: [AuthMe] ZALIKS logged in 127.0.0.1
+[16:22:38] [Server thread/INFO]: ZALIKS was slain by Phantom
+[16:50:08] [Server thread/INFO]: ZALIKS lost connection: Disconnected
+[16:50:08] [Server thread/INFO]: ZALIKS left the game
+[17:09:51] [Server thread/INFO]: Stopping the server
+[17:09:51] [Server thread/INFO]: Stopping server
+[17:09:51] [Server thread/INFO]: [AncientGates] Disabling AncientGates v2.6.1
+[17:09:51] [Server thread/INFO]: [AncientGates] Disabled
+[17:09:51] [Server thread/INFO]: [AuthMe] Disabling AuthMe v5.6.0-beta2-b2453
+[17:09:51] [Server thread/INFO]: [AuthMe] Waiting for 0 tasks to finish
+[17:09:51] [Server thread/INFO]: [AuthMe] AuthMe 5.6.0-beta2-b2453 disabled!
+[17:09:51] [Server thread/INFO]: [ChestShop] Disabling ChestShop v3.12.2 (build 353)
+[17:09:51] [Server thread/INFO]: [Chunky] Disabling Chunky v1.3.92
+[17:09:51] [Server thread/INFO]: [DeluxeMenus] Disabling DeluxeMenus v1.13.7-Release
+[17:09:51] [Server thread/INFO]: [Dynmap-SimpleClans] Disabling Dynmap-SimpleClans v2.0.2
+[17:09:51] [Server thread/INFO]: [EssentialsChat] Disabling EssentialsChat v2.21.0-dev+19-3eceec8
+[17:09:51] [Server thread/INFO]: [FramedImage] Disabling FramedImage v1.7.0
+[17:09:51] [Server thread/INFO]: [MyCommand] Disabling MyCommand v5.7.4
+[17:09:51] [Server thread/INFO]: *-=-=-=-=-=-=-=-=-* MyCommand v.5.7.4*-=-=-=-=-=-=-=-=-=-*
+[17:09:51] [Server thread/INFO]: | Tasks : Stopped all tasks.
+[17:09:51] [Server thread/INFO]: *-=-=-=-=-=-=-=-=-=-*    Bye!   *-=-=-=-=-=-=-=-=-=-=-*
+[17:09:51] [Server thread/INFO]: [PlayerReport] Disabling PlayerReport v3.4.3
+[17:09:51] [Server thread/INFO]: [TAB] Disabling TAB v4.0.7
+[17:09:51] [Server thread/INFO]: [TAB] Disabled in 6ms
+[17:09:51] [Server thread/INFO]: [TimeIsMoney] Disabling TimeIsMoney v1.9.9
+[17:09:51] [Server thread/INFO]: [TheNewEconomy] Disabling TheNewEconomy v0.1.2.0
+[17:09:51] [Server thread/INFO]: [spark] Disabling spark v1.10.67
+[17:09:51] [Server thread/INFO]: [EssentialsSpawn] Disabling EssentialsSpawn v2.21.0-dev+19-3eceec8
+[17:09:51] [Server thread/INFO]: [dynmap] Disabling dynmap v3.7-beta-2-923
+[17:09:51] [Server thread/INFO]: [dynmap] Unloaded 11 components.
+[17:09:51] [Server thread/INFO]: [dynmap] Stopping map renderer...
+[17:09:52] [Server thread/INFO]: [dynmap] Disabled
+[17:09:52] [Server thread/INFO]: [SimpleClans] Disabling SimpleClans v2.19.2-05e7abc
+[17:09:52] [Server thread/INFO]: [Essentials] Disabling Essentials v2.21.0-dev+19-3eceec8
+[17:09:52] [Server thread/INFO]: [Vault] [Economy] Essentials Economy unhooked.
+[17:09:52] [Server thread/INFO]: [SkinsRestorer] Disabling SkinsRestorer v15.0.13
+[17:09:52] [Server thread/INFO]: [WorldGuard] Disabling WorldGuard v7.0.9+5934e49
+[17:09:52] [Server thread/INFO]: [WorldGuard] Shutting down executor and cancelling any pending tasks...
+[17:09:52] [Server thread/INFO]: [PlaceholderAPI] Disabling PlaceholderAPI v2.11.5
+[17:09:52] [Server thread/INFO]: [FastAsyncWorldEdit] Disabling FastAsyncWorldEdit v2.8.3-SNAPSHOT-605;1996a38
+[17:09:52] [Server thread/INFO]: Unregistering com.sk89q.worldedit.bukkit.BukkitServerInterface from WorldEdit
+[17:09:52] [Server thread/INFO]: [Vault] Disabling Vault v1.7.3-b131
+[17:09:52] [Server thread/INFO]: [LuckPerms] Disabling LuckPerms v5.4.106
+[17:09:52] [Server thread/INFO]: [LuckPerms] Starting shutdown process...
+[17:09:52] [Server thread/INFO]: [LuckPerms] Closing storage...
+[17:09:53] [Server thread/INFO]: [LuckPerms] Goodbye!
+[17:09:53] [Server thread/INFO]: Saving players
+[17:09:53] [Server thread/INFO]: Saving worlds
+[17:09:53] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
+[17:09:53] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world'
+[17:09:53] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world'
+[17:09:53] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world'
+[17:09:53] [Server thread/INFO]: [ChunkHolderManager] Saved 8 block chunks, 112 entity chunks, 0 poi chunks in world 'world' in 0,05s
+[17:09:53] [Server thread/INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
+[17:09:53] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_nether]'/minecraft:the_nether
+[17:09:53] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world_nether'
+[17:09:53] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world_nether'
+[17:09:53] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world_nether'
+[17:09:53] [Server thread/INFO]: [ChunkHolderManager] Saved 0 block chunks, 42 entity chunks, 0 poi chunks in world 'world_nether' in 0,01s
+[17:09:53] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[17:09:53] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_the_end]'/minecraft:the_end
+[17:09:53] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world_the_end'
+[17:09:53] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world_the_end'
+[17:09:53] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world_the_end'
+[17:09:53] [Server thread/INFO]: [ChunkHolderManager] Saved 0 block chunks, 10 entity chunks, 0 poi chunks in world 'world_the_end' in 0,00s
+[17:09:53] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[17:09:53] [Server thread/INFO]: ThreadedAnvilChunkStorage: All dimensions are saved
+[17:09:53] [Server thread/INFO]: Flushing Chunk IO
+[17:09:53] [Server thread/INFO]: Closing Thread Pool
+[17:09:53] [Server thread/INFO]: Closing Server

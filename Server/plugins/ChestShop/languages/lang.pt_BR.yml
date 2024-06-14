@@ -1,0 +1,78 @@
+prefix: '&a[Shop] &r'
+shopinfo: |-
+  &aInformaГ§ГЈo da loja:
+  &fDono: &7%owner
+  &fEstoque: &7%stock
+  &fItem: &7%item
+shopinfo_buy: '&fComprar &7%amount &fpor &7%price'
+shopinfo_sell: '&fVender &7%amount &fpor &7%price'
+iteminfo: '&aInformaГ§ГЈo do item: &r'
+iteminfo_fullname: '&fNome completo: &7%item'
+iteminfo_shopname: '&fNome para a loja: &7%item'
+iteminfo_repaircost: '&fCusto de reparo: &7%cost'
+iteminfo_book: |-
+  &fTГ­tulo do livro: &7%title
+  &fAutor do Livro: &7%author
+  &fPГЎginas do Livro: &7%pages
+iteminfo_book_generation: '&fGeraГ§ГЈo do livro: &7%generation'
+iteminfo_lore: '&fDescriГ§ГЈo:'
+METRICS: |-
+  &a[Shop] &fMetricas:
+  &fContas: &7%contas
+  &fTransaГ§Гµes mГ©dias: &7%totalTransactions &f(buy: &7%buyTransactions &fsell: &7%sellTransactions&f)
+  &fMГ©dia dos itens comercializados: &7%totalItems &f(bought: &7%boughtItems &fsold: &7%soldItems&f)
+ACCESS_DENIED: VocГЄ nГЈo tem permissГЈo para aceder ao baГє da loja!
+TRADE_DENIED: VocГЄ nГЈo tem permissГЈo para negociar com essa loja!
+TRADE_DENIED_ACCESS_PERMS: VocГЄ nГЈo pode negociar com lojas Г s quais vocГЄ tem
+  acesso!
+TRADE_DENIED_CREATIVE_MODE: VocГЄ nГЈo pode negociar com lojas enquanto estiver no
+  modo criativo!
+NOT_ENOUGH_MONEY: Saldo insuficiente!
+NOT_ENOUGH_MONEY_SHOP: O dono da loja nГЈo tem dinheiro suficiente!
+CLIENT_DEPOSIT_FAILED: Falha ao depositar dinheiro na sua conta!
+SHOP_DEPOSIT_FAILED: Falha ao depositar dinheiro na conta do dono do shop!
+NO_ECONOMY_ACCOUNT: A conta econГґmica do dono da loja nГЈo existe!
+NO_BUYING_HERE: Tu nГЈo podes comprar aqui!
+NO_SELLING_HERE: NДѓo podes vender aqui!
+NOT_ENOUGH_SPACE_IN_INVENTORY: NГЈo tens espaГ§o suficiente no teu inventГЎrio!
+NOT_ENOUGH_SPACE_IN_CHEST: NДѓo tem espaГ§o suficiente no baГє!
+NOT_ENOUGH_ITEMS_TO_SELL: NГЈo tens itens suficientes para vender!
+NOT_ENOUGH_SPACE_IN_YOUR_SHOP: "[%price %item&7 a loja estГЎ cheia!](&f%vendedor&7\
+  \ tentou vender\n&7No mundo: &f%world\n&7Nas coordenadas: &f%x/%y/%z) "
+NOT_ENOUGH_STOCK: Este item estГЎ esgotado.
+NOT_ENOUGH_STOCK_IN_YOUR_SHOP: Seu %material shop estГЎ esgotado!
+YOU_BOUGHT_FROM_SHOP: VocГЄ comprou %item do %owner por %price.
+SOMEBODY_BOUGHT_FROM_YOUR_SHOP: '%buyer comprou %item por %price de vocГЄ.'
+YOU_SOLD_TO_SHOP: VocГЄ vendeu %item para %buyer por %price.
+SOMEBODY_SOLD_TO_YOUR_SHOP: '%seller vendeu %item por %price para vocГЄ.'
+YOU_CANNOT_CREATE_SHOP: VocГЄ nГЈo pode criar este tipo de loja!
+NO_CHEST_DETECTED: ImpossГ­vel encontrar um baГє!
+INVALID_SHOP_DETECTED: Esta loja nГЈo pode ser usada!
+INVALID_SHOP_PRICE: A loja tem um preГ§o invalido!
+INVALID_SHOP_QUANTITY: A loja tem uma quantidade invalida!
+CANNOT_ACCESS_THE_CHEST: Tu nГЈo tens permissГЈo para abrir este baГє!
+SELL_PRICE_HIGHER_THAN_BUY_PRICE: O preГ§o de venda estГЎ acima do preГ§o de compra!
+SELL_PRICE_ABOVE_MAX: O preГ§o de venda %price estГЎ acima do preГ§o mГЎximo %maxprice!
+SELL_PRICE_BELOW_MIN: O preГ§o de venda %price estГЎ abaixo do preГ§o mГ­nimo %minprice!
+BUY_PRICE_ABOVE_MAX: O preГ§o de compra %price estГЎ acima do preГ§o mГЎximo %maxprice!
+BUY_PRICE_BELOW_MIN: O preГ§o de compra %price estГЎ abaixo do preГ§o mГ­nimo %minprice!
+CLICK_TO_AUTOFILL_ITEM: Clique na placa segurando o item a que se destina esta loja!
+NO_ITEM_IN_HAND: VocГЄ nГЈo estГЎ segurando um item para preencher automaticamente!
+PROTECTED_SHOP: Shop protegido com LWC com sucesso!
+PROTECTED_SHOP_SIGN: Protegeu com sucesso o letreiro da loja com LWC!
+SHOP_CREATED: Shop criado com sucesso!
+SHOP_FEE_PAID: Vendido por %amount
+SHOP_REFUNDED: Reembolsado por %amount.
+ITEM_GIVEN: Foi dado %item ao %player.
+RESTRICTED_SIGN_CREATED: Placa criada com sucesso!
+PLAYER_NOT_FOUND: Jogador nГЈo encontrado!
+NO_PERMISSION: Tu nГЈo tens permissГЈo para fazer isso!
+INCORRECT_ITEM_ID: O ID do item invГЎlido!
+INVALID_CLIENT_NAME: Seu nome de usuГЎrio nГЈo Г© um nome de usuГЎrio vГЎlido do Minecraft!
+NOT_ENOUGH_PROTECTIONS: NГЈo Г© possГ­vel criar uma proteГ§ГЈo!
+NO_SHOP_FOUND: Nenhuma loja encontrada.
+CANNOT_CREATE_SHOP_HERE: NГЈo podes criar uma loja aqui!
+TOGGLE_MESSAGES_OFF: VocГЄ nГЈo irГЎ receber mais mensagens de sua(s) loja(s).
+TOGGLE_MESSAGES_ON: VocГЄ agora irГЎ receber mensagens de sua(s) loja(s).
+TOGGLE_ACCESS_ON: VocГЄ nГЈo pode mais trocar em lojas Г s quais vocГЄ tem acesso
+TOGGLE_ACCESS_OFF: Agora vocГЄ pode trocar em lojas Г s quais vocГЄ tem acesso

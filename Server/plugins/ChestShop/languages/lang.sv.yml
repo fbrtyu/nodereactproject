@@ -1,0 +1,92 @@
+prefix: '&a[AffГ¤r] &r'
+shopinfo: |-
+  &aAffГ¤r-information:
+  &fГ„gare: &7%owner
+  &fLager: &7%stock
+  &fArtikel: &7%item
+shopinfo_buy: '&fKГ¶p &7%amount &ffГ¶r &7%price'
+shopinfo_sell: '&fSГ¤lj &7%amount &ffГ¶r &7%price'
+iteminfo: '&aArtikel-information: &r'
+iteminfo_fullname: '&fFullt Namn: &7%item'
+iteminfo_shopname: '&fAffГ¤r-skylt: &7%item'
+iteminfo_repaircost: '&fLagnings-kostnad: &7%cost'
+iteminfo_book: |-
+  &fBokens Titel: &7%title
+  &fBokens FГ¶rfattare: &7%author
+  &fBokens Sidor: &7%pages
+iteminfo_book_generation: '&fBok-generation: &7%generation'
+iteminfo_lore: |-
+  &fBeskrivning:
+  &r%lore
+METRICS: |-
+  &a[AffГ¤r] &fMetrics:
+  &fKonton: &7%accounts
+  &fGenomsnittlig transaktion: &7%totalTransactions &f(kГ¶p: &7%buyTransactions &fsГ¤lj: &7%sellTransactions&f)
+  &fGenomsnittliga artiklar byteshandlade: &7%totalItems &f(kГ¶pt: &7%boughtItems &fsГҐlt: &7%soldItems&f)
+ACCESS_DENIED: Du har inte behГ¶righet att komma ГҐt butikens kista!
+TRADE_DENIED: Du har inte tillstГҐnd att byteshandla med denna affГ¤r!
+TRADE_DENIED_ACCESS_PERMS: Du kan inte byteshandla med butiker som du har tillgГҐng
+  till!
+TRADE_DENIED_CREATIVE_MODE: Du kan inte byteshandla med butiker medan du Г¤r i kreativt
+  lГ¤ge!
+NOT_ENOUGH_MONEY: Du har inte rГҐd!
+NOT_ENOUGH_MONEY_SHOP: AffГ¤rsГ¤garen har inte tillrГ¤ckligt med pengar!
+CLIENT_DEPOSIT_FAILED: Pengarna kunde inte sГ¤ttas in pГҐ ditt konto!
+SHOP_DEPOSIT_FAILED: Pengarna kunde inte sГ¤ttas in hos Г¤garen!
+NO_ECONOMY_ACCOUNT: AffГ¤rsГ¤garen har inget bankkonto!
+NO_BUYING_HERE: Du kan inte kГ¶pa hГ¤r!
+NO_SELLING_HERE: Du kan inte sГ¤lja hГ¤r!
+NOT_ENOUGH_SPACE_IN_INVENTORY: Du har inte tillrГ¤ckligt med plats i ditt personliga
+  fГ¶rrГҐd!
+NOT_ENOUGH_SPACE_IN_CHEST: Det finns inte tillrГ¤ckligt med utrymme i kistan!
+NOT_ENOUGH_ITEMS_TO_SELL: Du har inte tillrГ¤ckligt med fГ¶remГҐl fГ¶r att sГ¤lja!
+NOT_ENOUGH_SPACE_IN_YOUR_SHOP: |-
+  [%price %item&7 affГ¤ren Г¤r full!](&f%seller&7 fГ¶rsГ¶kte att sГ¤lja
+  &7VГ¤rld: &f%world
+  &7Exakta koordinater: &f%x/%y/%z)
+NOT_ENOUGH_STOCK: Denna affГ¤r har slut pГҐ lager.
+NOT_ENOUGH_STOCK_IN_YOUR_SHOP: |-
+  [%price %item&7 affГ¤rens lager Г¤r slut!](&f%buyer&7 fГ¶rsГ¶kte kГ¶pa
+  &7VГ¤rld: &f%world
+  &7Exakta koordinater: &f%x/%y/%z)
+YOU_BOUGHT_FROM_SHOP: Du kГ¶pte %item frГҐn %owner fГ¶r %price.
+SOMEBODY_BOUGHT_FROM_YOUR_SHOP: |-
+  [%buyer kГ¶pte %item fГ¶r %price.](&7VГ¤rld: &f%world
+  &7Exakta koordinater: &f%x/%y/%z)
+YOU_SOLD_TO_SHOP: Du sГҐlde %item till %buyer fГ¶r %price.
+SOMEBODY_SOLD_TO_YOUR_SHOP: |-
+  [%seller sГҐlde %item fГ¶r %price.](&7VГ¤rld: &f%world
+  &7Exakta koordinater: &f%x/%y/%z)
+YOU_CANNOT_CREATE_SHOP: Du kan inte skapa denna typ av affГ¤r!
+NO_CHEST_DETECTED: Kunde inte hitta en kista!
+INVALID_SHOP_DETECTED: AffГ¤ren kan inte anvГ¤ndas!
+INVALID_SHOP_PRICE: AffГ¤ren har ett ogiltigt pris!
+INVALID_SHOP_QUANTITY: AffГ¤ren har ett ogiltigt antal!
+CANNOT_ACCESS_THE_CHEST: Du har inte behГ¶righet att komma ГҐt denna kista!
+SELL_PRICE_HIGHER_THAN_BUY_PRICE: Sell price is above the buy price!
+SELL_PRICE_ABOVE_MAX: Sell price %price is above maximum %maxprice!
+SELL_PRICE_BELOW_MIN: Sell price %price is below minimum %minprice!
+BUY_PRICE_ABOVE_MAX: Buy price %price is above maximum %maxprice!
+BUY_PRICE_BELOW_MIN: Buy price %price is below minimum %minprice!
+CLICK_TO_AUTOFILL_ITEM: Klicka pГҐ skylten med det fГ¶remГҐl som denna affГ¤r kommer
+  sГ¤lja/kГ¶pa!
+NO_ITEM_IN_HAND: Du har inte ett fГ¶remГҐl i handen fГ¶r att autofylla!
+PROTECTED_SHOP: AffГ¤ren lyckades bli skyddad med LWC!
+PROTECTED_SHOP_SIGN: AffГ¤rsskylten lyckades bli skyddad med LWC!
+SHOP_CREATED: AffГ¤ren har skapats!
+SHOP_FEE_PAID: Du har blivit avdragen %amount
+SHOP_REFUNDED: Du har ГҐterbetalats %amount.
+ITEM_GIVEN: Gav %item till %player.
+RESTRICTED_SIGN_CREATED: Skylt skapad!
+PLAYER_NOT_FOUND: Spelaren hittades inte!
+NO_PERMISSION: Du saknar rГ¤ttigheter att gГ¶ra det dГ¤r!
+INCORRECT_ITEM_ID: Du har angett ett ogiltigt fГ¶remГҐls-id!
+INVALID_CLIENT_NAME: Ditt anvГ¤ndarnamn Г¤r inte ett giltigt Minecraft-anvГ¤ndarnamn!
+NOT_ENOUGH_PROTECTIONS: Kunde inte skapa ett skydd!
+NO_SHOP_FOUND: Ingen butik hittades.
+CANNOT_CREATE_SHOP_HERE: Du kan inte skapa en butik hГ¤r!
+TOGGLE_MESSAGES_OFF: Du kommer inte lГ¤ngre att fГҐ meddelanden frГҐn dina butik(er).
+TOGGLE_MESSAGES_ON: Du kommer nu att fГҐ meddelanden frГҐn dina butik(er).
+TOGGLE_ACCESS_ON: Du kan inte lГ¤ngre byteshandla med butiker som du har tillgГҐng
+  till
+TOGGLE_ACCESS_OFF: Du kan nu byteshandla med butiker som du har tillgГҐng till

@@ -1,0 +1,66 @@
+%YAML 1.1
+---
+isSafe: true
+icons:
+    blood:
+        label: blood
+    clanhome:
+        label: clanhome
+sets:
+    simpleclans.layers.home:
+        hide: false
+        circles: {
+            }
+        deficon: default
+        areas: {
+            }
+        label: Clan Homes
+        markers: {
+            }
+        lines: {
+            }
+        layerprio: 10
+        minzoom: 0
+    simpleclans.layers.kill:
+        hide: false
+        circles: {
+            }
+        deficon: default
+        areas: {
+            }
+        label: Deaths
+        markers: {
+            }
+        lines: {
+            }
+        layerprio: 20
+        minzoom: 0
+    simpleclans.layers.lands:
+        hide: false
+        circles: {
+            }
+        deficon: default
+        areas: {
+            }
+        label: Lands
+        markers: {
+            }
+        lines: {
+            }
+        layerprio: 1
+        minzoom: 0
+    markers:
+        hide: false
+        circles: {
+            }
+        deficon: default
+        areas: {
+            }
+        label: Markers
+        markers: {
+            }
+        lines: {
+            }
+        layerprio: 0
+playersets: {
+    }

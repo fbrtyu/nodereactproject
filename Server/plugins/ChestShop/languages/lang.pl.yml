@@ -1,0 +1,89 @@
+prefix: '&a[Sklep] &r'
+shopinfo: |-
+  &aInformacje o sklepie:
+  &fWЕ‚aЕ›ciciel: &7%owner
+  &fIloЕ›Д‡: &7%stock
+  &fPrzedmiot: &7%item
+shopinfo_buy: '&fKup &7%amount &fza &7%price'
+shopinfo_sell: '&fSprzedaj &7%amount &fza &7%price'
+iteminfo: 'В§aInfo. o przedmiocie: В§r'
+iteminfo_fullname: '&fPeЕ‚na Nazwa: &7%item'
+iteminfo_shopname: '&fNazwa Sklepu: &7%item'
+iteminfo_repaircost: '&fKoszt Naprawy: &7%cost'
+iteminfo_book: |-
+  &fTytuЕ‚ ksiД…Ејki: &7%title
+  &fAutor ksiД…Ејki: &7%author
+  &fStrony ksiД…Ејki: &7%pages
+iteminfo_book_generation: '&fGenerowanie KsiД…Ејki: &7%generation'
+iteminfo_lore: |-
+  &fOpis:
+  &r%lore
+METRICS: |-
+  &a[Sklep] &fStatystyki:
+  &fLiczba Kont: &7%accounts
+  &fЕљrednie transakcje: &7%totalTransactions &f(Kup: &7%buyTransactions &fSprzedaj: &7%sellTransactions&f)
+  &fЕљrednie wymienione przedmioty: &7%totalItems &f(Kupione: &7%boughtItems &fSprzedane: &7%soldItems&f)
+ACCESS_DENIED: Nie masz uprawnieЕ„ do przeglД…dania zawartoЕ›ci tego sklepu!
+TRADE_DENIED: Nie masz pozwolenia, aby handlowaД‡ w tym sklepie!
+TRADE_DENIED_ACCESS_PERMS: Nie moЕјesz handlowaД‡ w sklepach, do ktГіrych masz dostД™p!
+TRADE_DENIED_CREATIVE_MODE: Nie moЕјesz handlowaД‡ w sklepach w trybie kreatywnym!
+NOT_ENOUGH_MONEY: Nie staД‡ ciД™!
+NOT_ENOUGH_MONEY_SHOP: WЕ‚aЕ›ciciel sklepu nie ma wystarczajД…co pieniД™dzy!
+CLIENT_DEPOSIT_FAILED: WpЕ‚ata pieniД™dzy na twoje konto nie powiodЕ‚a siД™!
+SHOP_DEPOSIT_FAILED: Wplata pieniД™dzy na konto wЕ‚aЕ›ciciela sklepu nie powiodЕ‚a
+  siД™!
+NO_ECONOMY_ACCOUNT: Konto ekonomiczne od wЕ‚aЕ›ciciela sklepu nie istnieje!
+NO_BUYING_HERE: Nie moЕјesz tutaj kupowaД‡!
+NO_SELLING_HERE: Nie moЕјesz tutaj sprzedawaД‡!
+NOT_ENOUGH_SPACE_IN_INVENTORY: Brak wolnego miejsca w ekwipunku!
+NOT_ENOUGH_SPACE_IN_CHEST: Brak wolnego miejsca w skrzyni!
+NOT_ENOUGH_ITEMS_TO_SELL: Masz za maЕ‚o przedmiotГіw, aby je sprzedaД‡!
+NOT_ENOUGH_SPACE_IN_YOUR_SHOP: |-
+  [Sklep z %item&7 w cenie %price jest peЕ‚ny!](&f%seller&7 prГіbowaЕ‚ sprzedaД‡
+  &7W Е›wiecie: &f%world
+  &7Na pozycji: &f%x/%y/%z)
+NOT_ENOUGH_STOCK: Ten sklep jest pusty.
+NOT_ENOUGH_STOCK_IN_YOUR_SHOP: |-
+  [Sklep z %item&7 w cenie %price jest pusty!](&f%buyer&7 prГіbowaЕ‚ kupiД‡
+  &7W Е›wiecie: &f%world
+  &7Na pozycji: &f%x/%y/%z)
+YOU_BOUGHT_FROM_SHOP: KupiЕ‚eЕ› %item od %owner za %price.
+SOMEBODY_BOUGHT_FROM_YOUR_SHOP: |-
+  [%buyer kupiЕ‚ %item za %price.](&7W Е›wiecie: &f%world
+  &7Na pozycji: &f%x/%y/%z)
+YOU_SOLD_TO_SHOP: SprzedaЕ‚eЕ› %item graczowi %buyer za %price.
+SOMEBODY_SOLD_TO_YOUR_SHOP: |-
+  [%seller sprzedaЕ‚ %item za %price.](&7W Е›wiecie: &f%world
+  &7Na pozycji: &f%x/%y/%z)
+YOU_CANNOT_CREATE_SHOP: Nie moЕјesz stworzyД‡ sklepu tego typu!
+NO_CHEST_DETECTED: Nie znaleziono skrzyni!
+INVALID_SHOP_DETECTED: Sklep nie moЕјe byД‡ uЕјywany (byД‡ moЕјe brakuje skrzyni)!
+INVALID_SHOP_PRICE: ZЕ‚a cena!
+INVALID_SHOP_QUANTITY: Sklep ma podana niewlasciwa ilosc produktu!
+CANNOT_ACCESS_THE_CHEST: Nie masz uprawnieЕ„ dostД™pu do tej skrzyni!
+SELL_PRICE_HIGHER_THAN_BUY_PRICE: Cena sprzedaЕјy jest wyЕјsza od ceny zakupu!
+SELL_PRICE_ABOVE_MAX: Cena sprzedaЕјy %price jest wyЕјsza niЕј maksymalna %maxprice!
+SELL_PRICE_BELOW_MIN: Cena sprzedaЕјy %price jest niЕјsza niЕј minimalna %minprice!
+BUY_PRICE_ABOVE_MAX: Cena zakupu %price jest wyЕјsza niЕј maksymalna %maxprice!
+BUY_PRICE_BELOW_MIN: Cena zakupu %price jest niЕјsza niЕј minimalna %minprice!
+CLICK_TO_AUTOFILL_ITEM: Kliknij znak z przedmiotem, dla ktГіrego przeznaczony jest
+  ten sklep!
+NO_ITEM_IN_HAND: Nie masz w rД™ku przedmiotu do automatycznego wypeЕ‚nienia!
+PROTECTED_SHOP: Sklep zostaЕ‚ zabezpieczony przez LWC!
+PROTECTED_SHOP_SIGN: PomyЕ›lnie zabezpieczono znak sklepu z LWC!
+SHOP_CREATED: Sklep zostaЕ‚ pomyЕ›lnie utworzony!
+SHOP_FEE_PAID: 'ZostaЕ‚eЕ› obciД…Ејony kosztami: " %amount'
+SHOP_REFUNDED: 'ZwrГіcono ci: " %amount.'
+ITEM_GIVEN: Dano %item graczowi %player.
+RESTRICTED_SIGN_CREATED: Znak zostaЕ‚ pomyЕ›lnie utworzony!
+PLAYER_NOT_FOUND: Nie znaleziono gracza!
+NO_PERMISSION: Nie masz do tego uprawnieЕ„!
+INCORRECT_ITEM_ID: PodaЕ‚eЕ› niepoprawne ID przedmiotu!
+INVALID_CLIENT_NAME: Twoja nick nie jest poprawnД… nazwД… uЕјytkownika Minecraft!
+NOT_ENOUGH_PROTECTIONS: Nie moЕјna stworzyД‡ zabezpieczenia!
+NO_SHOP_FOUND: Nie znaleziono sklepu.
+CANNOT_CREATE_SHOP_HERE: Nie moЕјesz stworzyД‡ tutaj sklepu!
+TOGGLE_MESSAGES_OFF: Nie bД™dziesz juЕј otrzymywaД‡ wiadomoЕ›ci ze swoich sklepГіw.
+TOGGLE_MESSAGES_ON: Od teraz bД™dziesz otrzymywaЕ‚ wiadomoЕ›ci ze swoich sklepГіw.
+TOGGLE_ACCESS_ON: Nie moЕјesz juЕј handlowaД‡ w sklepach, do ktГіrych masz dostД™p
+TOGGLE_ACCESS_OFF: MoЕјesz teraz handlowaД‡ w sklepach, do ktГіrych masz dostД™p

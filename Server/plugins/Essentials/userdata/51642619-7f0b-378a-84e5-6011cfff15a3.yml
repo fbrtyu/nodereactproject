@@ -1,0 +1,38 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 127.0.0.1
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 1699189046905
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1699189094340
+  login: 1699188798938
+money: '0'
+last-account-name: ZALIKSPLAY
+lastlocation:
+  world: 90290a5c-7df7-48cb-9637-67d6313280a9
+  world-name: world
+  x: -265.14365188896164
+  y: 66.0
+  z: 399.9994342220099
+  yaw: -7.193599700927734
+  pitch: 10.349864959716797
+logoutlocation:
+  world: 90290a5c-7df7-48cb-9637-67d6313280a9
+  world-name: world
+  x: -274.02342322324006
+  y: 66.0
+  z: 386.35776947511505
+  yaw: -79.0472412109375
+  pitch: 11.100028991699219

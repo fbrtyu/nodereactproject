@@ -1,0 +1,92 @@
+prefix: '&a[Kauppa] &r'
+shopinfo: |-
+  &aKaupan tiedot:
+  &fOmistaja: &7%owner
+  &fVarasto: &7%stock
+  &fTavara: &7%item
+shopinfo_buy: '&fOsta mГ¤Г¤rГ¤ &7%amount &fhintaan &7%price'
+shopinfo_sell: '&fMyy mГ¤Г¤rГ¤ &7%amount &fhintaan &7%price'
+iteminfo: '&aTavaran tiedot: &r'
+iteminfo_fullname: '&fKoko nimi: &7%item'
+iteminfo_shopname: '&fKaupan kyltti: &7%item'
+iteminfo_repaircost: '&fKorjaus maksaa: &7%cost'
+iteminfo_book: |-
+  &fKirjan otsikko: &7%title
+  &fKirjan tekijГ¤: &7%author
+  &fKirjan sivumГ¤Г¤rГ¤: &7%pages
+iteminfo_book_generation: '&fKirjan sukupolvi: &7%generation'
+iteminfo_lore: |-
+  &fInfoteksti:
+  &r%lore
+METRICS: |-
+  &a[Kauppa] &fMetriikat:
+  &KГ¤yttГ¤jiГ¤: &7%accounts
+  &fOstotapahtumia keskimГ¤Г¤rin: &7%totalTransactions &f(ostoja: &7%buyTransactions &fmyyntejГ¤: &7%sellTransactions&f)
+  &fTavaroita vaihdettu keskimГ¤Г¤rin: &7%totalItems &f(ostettu: &7%boughtItems &fmyyty: &7%soldItems&f)
+ACCESS_DENIED: Sinulla ei ole lupaa kГ¤yttГ¤Г¤ kyseisen kaupan arkkua!
+TRADE_DENIED: Sinulla ei ole lupaa tehdГ¤ vaihtokauppaa kyseisessГ¤ kaupassa!
+TRADE_DENIED_ACCESS_PERMS: Et voi tehdГ¤ vaihtokauppaa kauppojen kanssa, joihin sinulla
+  on pГ¤Г¤sy!
+TRADE_DENIED_CREATIVE_MODE: Et voi tehdГ¤ vaihtokauppaa kauppojen kanssa, kun olet
+  luovassa tilassa!
+NOT_ENOUGH_MONEY: Sinulla ei ole tarpeeksi rahaa!
+NOT_ENOUGH_MONEY_SHOP: Kaupan omistajalla ei ole tarpeeksi rahaa!
+CLIENT_DEPOSIT_FAILED: Rahatalletus tilillesi epГ¤onnistui!
+SHOP_DEPOSIT_FAILED: Rahan talletus kaupan omistajalle epГ¤onnistui!
+NO_ECONOMY_ACCOUNT: Kaupan omistajalla ei ole Economy-tiliГ¤!
+NO_BUYING_HERE: Et voi ostaa tГ¤stГ¤ kaupasta!
+NO_SELLING_HERE: Et voi myydГ¤ tГ¤hГ¤n kauppaan!
+NOT_ENOUGH_SPACE_IN_INVENTORY: Sinulla ei ole tarpeeksi tilaa tavaraluettelossa!
+NOT_ENOUGH_SPACE_IN_CHEST: Arkussa ei ole tarpeeksi tilaa!
+NOT_ENOUGH_ITEMS_TO_SELL: Sinulla ei ole tarpeeksi tuotteita myytГ¤vГ¤ksi!
+NOT_ENOUGH_SPACE_IN_YOUR_SHOP: |-
+  [%price %item&7 kauppa on tГ¤ynnГ¤!](&f%seller&7 yritti myydГ¤ kauppaan
+  &7Maassa: &f%world
+  &7Sijainnissa: &f%x/%y/%z)
+NOT_ENOUGH_STOCK: TГ¤mГ¤n kaupan varasto on tyhjГ¤.
+NOT_ENOUGH_STOCK_IN_YOUR_SHOP: |-
+  [%price %item&7 kaupan varasto on tyhjГ¤!](&f%buyer&7 yritti tehdГ¤ ostoksen
+  &7Maassa: &f%world
+  &7Sijainnissa: &f%x/%y/%z)
+YOU_BOUGHT_FROM_SHOP: Ostit tavaran %item pelaajalta %owner hintaan %price.
+SOMEBODY_BOUGHT_FROM_YOUR_SHOP: |-
+  [%buyer osti tavaran %item hintaan %price.](&7Maassa: &f%world
+  &7Sijainnissa: &f%x/%y/%z)
+YOU_SOLD_TO_SHOP: Myit tavaran %item pelaajalle %buyer hintaan %price.
+SOMEBODY_SOLD_TO_YOUR_SHOP: |-
+  [%seller myi tavaran %item hintaan %price.](&7Maassa: &f%world
+  &7Sijainnissa: &f%x/%y/%z)
+YOU_CANNOT_CREATE_SHOP: Et voi luoda tГ¤mГ¤n tyyppistГ¤ kauppaa!
+NO_CHEST_DETECTED: Arkkua ei lГ¶ydetty!
+INVALID_SHOP_DETECTED: Kauppaa ei voi kГ¤yttГ¤Г¤!
+INVALID_SHOP_PRICE: Kaupassa on virheellinen hinta!
+INVALID_SHOP_QUANTITY: Kaupassa on virheellinen tavaramГ¤Г¤rГ¤!
+CANNOT_ACCESS_THE_CHEST: Sinulla ei ole oikeuksia kГ¤yttГ¤Г¤ tГ¤tГ¤ arkkua!
+SELL_PRICE_HIGHER_THAN_BUY_PRICE: Sell price is above the buy price!
+SELL_PRICE_ABOVE_MAX: Sell price %price is above maximum %maxprice!
+SELL_PRICE_BELOW_MIN: Sell price %price is below minimum %minprice!
+BUY_PRICE_ABOVE_MAX: Buy price %price is above maximum %maxprice!
+BUY_PRICE_BELOW_MIN: Buy price %price is below minimum %minprice!
+CLICK_TO_AUTOFILL_ITEM: Napsauta kylttiГ¤ tuotteen kanssa, jota tГ¤mГ¤ kauppa ostaa/myy!
+NO_ITEM_IN_HAND: Sinulla ei ole kohdetta kГ¤dessГ¤si automaattista tГ¤yttГ¤mistГ¤
+  varten!
+PROTECTED_SHOP: Suojattu kauppa onnistuneesti LWC:llГ¤!
+PROTECTED_SHOP_SIGN: Suojattu kauppakyltti onnistuneesti LWC:llГ¤!
+SHOP_CREATED: Kauppa luotiin onnistuneesti!
+SHOP_FEE_PAID: Sinulta on veloitettu %amount
+SHOP_REFUNDED: Sinulle on hyvitetty %amount.
+ITEM_GIVEN: Annettiin tavara %item pelaajalle %player.
+RESTRICTED_SIGN_CREATED: Kyltti luotu onnistuneesti!
+PLAYER_NOT_FOUND: Pelaajaa ei lГ¶ydety!
+NO_PERMISSION: Sinulla ei ole siihen oikeuksia!
+INCORRECT_ITEM_ID: Olet mГ¤Г¤rittГ¤nyt virheellisen kohteen tunnuksen!
+INVALID_CLIENT_NAME: KГ¤yttГ¤jГ¤nimesi ei ole kelvollinen Minecraft-kГ¤yttГ¤jГ¤tunnus!
+NOT_ENOUGH_PROTECTIONS: Suojausta ei voitu luoda!
+NO_SHOP_FOUND: Kauppaa ei lГ¶ytynyt.
+CANNOT_CREATE_SHOP_HERE: Et voi luoda kauppaa tГ¤Г¤llГ¤!
+TOGGLE_MESSAGES_OFF: Et enГ¤Г¤ saa viestejГ¤ kaupoistasi.
+TOGGLE_MESSAGES_ON: Saat nyt viestejГ¤ kaupoistasi.
+TOGGLE_ACCESS_ON: Et voi enГ¤Г¤ tehdГ¤ vaihtokauppaa kauppojen kanssa, joihin sinulla
+  on pГ¤Г¤sy
+TOGGLE_ACCESS_OFF: Voit nyt tehdГ¤ vaihtokauppaa kauppojen kanssa, joihin sinulla
+  on pГ¤Г¤sy

@@ -1,0 +1,87 @@
+prefix: '&a[Bolt] &r'
+shopinfo: |-
+  &aBolt InformГЎciГі:
+  &fTulaj: &7%owner
+  &fKГ©szlet: &7%stock
+  &fTГЎrgy: &7%item
+shopinfo_buy: '&7%amount &fdarab vГЎsГЎrlГЎsa &7%price-t'
+shopinfo_sell: '&7%amount &fdarab eladГЎsa &7%price-t'
+iteminfo: '''&aTГЎrgy InformГЎciГі: &r'
+iteminfo_fullname: '&fTeljes NГ©v: &7%item'
+iteminfo_shopname: '&fBolt TГЎbla: &7%item'
+iteminfo_repaircost: '&fJavГ­tГЎsi KГ¶ltsГ©g: &7%cost'
+iteminfo_book: |-
+  &fKГ¶nyvcГ­m: &7%title
+  &fKГ¶nyv SzerzЕ‘: &7%author
+  &fKГ¶nyvoldalak: &7%pages
+iteminfo_book_generation: '&fKГ¶nyv GenerГЎciГі: &7%generation'
+iteminfo_lore: |-
+  &fLore:
+  &r%lore
+METRICS: |-
+  &a[Bolt] &fMetrikГЎk:
+  &fFiГіkok: &7%accounts
+  &fГЃtlagos tranzakciГіk: &7%totalTransactions &f(vГ©tel: &7%buyTransactions &feladГЎs: &7%sellTransactions&f)
+  &fГЃtlagos tГЎrgy kereskedГ©sek: &7%totalItems &f(vГЎsГЎrolt: &7%boughtItems &feladott: &7%soldItems&f)
+ACCESS_DENIED: Nincs engedГ©lyed hozzГЎfГ©rni ennek a boltnak a tГЎrolГіjГЎhoz!
+TRADE_DENIED: Nincs engedГ©lyed kereskedni ebben a boltban!
+TRADE_DENIED_ACCESS_PERMS: Nem kereskedhetsz olyan boltokban, amelyekhez hozzГЎfГ©rsz!
+TRADE_DENIED_CREATIVE_MODE: Nem kereskedhetsz a boltokban kreatГ­v mГіdban!
+NOT_ENOUGH_MONEY: Nincs elГ©g pГ©nzed!
+NOT_ENOUGH_MONEY_SHOP: A bolt tulajnak nincs elГ©g pГ©nze!
+CLIENT_DEPOSIT_FAILED: A szГЎmlГЎdra tГ¶rtГ©nЕ‘ befizetГ©s nem sikerГјlt!
+SHOP_DEPOSIT_FAILED: A pГ©nzbefizetГ©s a bolt tulajnak sikertelen!
+NO_ECONOMY_ACCOUNT: A bolt tulajnak nincs gazdasГЎgi szГЎmlГЎja!
+NO_BUYING_HERE: Itt nem lehet vГЎsГЎrolni!
+NO_SELLING_HERE: Itt nem lehet eladni!
+NOT_ENOUGH_SPACE_IN_INVENTORY: Nincs elГ©g hely a kГ©szletedben!
+NOT_ENOUGH_SPACE_IN_CHEST: Nincs elГ©g hely a lГЎdГЎban!
+NOT_ENOUGH_ITEMS_TO_SELL: Nincs elГ©g tГЎrgyad az eladГЎshoz!
+NOT_ENOUGH_SPACE_IN_YOUR_SHOP: |-
+  [%price %item&7 bolt tele van!](&f%seller&7 prГіbГЎlt eladni
+  &7Ebben a vilГЎgban: &f%world
+  &7Ezen a helyen: &f%x/%y/%z)
+NOT_ENOUGH_STOCK: Ez a bolt kifogyott.
+NOT_ENOUGH_STOCK_IN_YOUR_SHOP: |-
+  [%price %item&7 bolt kifogyott!](&f%buyer&7 prГіbГЎlt vГЎsГЎrolni
+  &7Ebben a vilГЎgban: &f%world
+  &7Ezen a helyen: &f%x/%y/%z)
+YOU_BOUGHT_FROM_SHOP: VettГ©l %item-t %owner-tЕ‘l/-tГіl %price-t.
+SOMEBODY_BOUGHT_FROM_YOUR_SHOP: |-
+  [%buyer vГЎsГЎrolt %item-t %price-t.](&7Ebben a vilГЎgban: &f%world
+  &7Ezen a helyen: &f%x/%y/%z)
+YOU_SOLD_TO_SHOP: EladtГЎl %item-t %buyer-nak/-nek %price-t.
+SOMEBODY_SOLD_TO_YOUR_SHOP: |-
+  [%seller eladott %item-t %price-t.](&7Eben a vilГЎgban: &f%world
+  &7Ezen a helyen: &f%x/%y/%z)
+YOU_CANNOT_CREATE_SHOP: Nem hozhatsz lГ©tre ilyen tГ­pusГє boltot!
+NO_CHEST_DETECTED: Nem talГЎlhatГі egy lГЎda!
+INVALID_SHOP_DETECTED: A bolt nem hasznГЎlhatГі!
+INVALID_SHOP_PRICE: A bolt ГЎra Г©rvГ©nytelen!
+INVALID_SHOP_QUANTITY: A bolt mennyisГ©ge Г©rvГ©nytelen!
+CANNOT_ACCESS_THE_CHEST: Nincs engedГ©lyed hozzГЎfГ©rni ehhez a lГЎdГЎhoz!
+SELL_PRICE_HIGHER_THAN_BUY_PRICE: Sell price is above the buy price!
+SELL_PRICE_ABOVE_MAX: A(z) %price eladГЎsi ГЎr meghaladja a maximГЎlis %maxprice-t!
+SELL_PRICE_BELOW_MIN: A(z) %price eladГЎsi ГЎr a minimum %minprice alatt van!
+BUY_PRICE_ABOVE_MAX: A(z) %price vГ©telГЎr meghaladja a maximГЎlis %maxprice-t!
+BUY_PRICE_BELOW_MIN: A(z) %price vГ©telГЎr a minimum %minprice alatt van!
+CLICK_TO_AUTOFILL_ITEM: Kattints a tГЎblГЎra azzal a tГЎrggyal, ami a bolthoz tartozik!
+NO_ITEM_IN_HAND: Nincs egy tГЎrgy a kezedben az automatikus feltГ¶ltГ©shez!
+PROTECTED_SHOP: Sikeresen levГ©dted a boltot az LWC-vel!
+PROTECTED_SHOP_SIGN: Sikeresen levГ©dted a bolt tГЎblГЎt az LWC-vel!
+SHOP_CREATED: A bolt sikeresen lГ©trehozva!
+SHOP_FEE_PAID: FelszГЎmolГЎsra kerГјlt %amount
+SHOP_REFUNDED: VisszatГ©rГ­tГ©sre kerГјlt %amount.
+ITEM_GIVEN: '%item adva %player-nak/-nek.'
+RESTRICTED_SIGN_CREATED: A tГЎbla sikeresen lГ©trehozva!
+PLAYER_NOT_FOUND: JГЎtГ©kos nem talГЎlhatГі!
+NO_PERMISSION: Ehhez nincs engedГ©lyed!
+INCORRECT_ITEM_ID: Г‰rvГ©nytelen tГЎrgy id-t adtГЎl meg!
+INVALID_CLIENT_NAME: A felhasznГЎlГіneved nem egy Г©rvГ©nyes Minecraft felhasznГЎlГіnГ©v!
+NOT_ENOUGH_PROTECTIONS: Nem sikerГјlt lГ©trehozni egy levГ©dГ©st!
+NO_SHOP_FOUND: Nem talГЎlhatГі bolt.
+CANNOT_CREATE_SHOP_HERE: Itt nem lehet boltot lГ©trehozni!
+TOGGLE_MESSAGES_OFF: Nem fogsz tГ¶bb Гјzeneteket kapni a boltodrГіl, vagy boltjaidrГіl.
+TOGGLE_MESSAGES_ON: MostantГіl Гјzeneteket fogsz kapni a boltodrГіl, vagy boltjaidrГіl.
+TOGGLE_ACCESS_ON: MГЎr nem kereskedhetsz olyan boltokban, amelyekhez hozzГЎfГ©rsz
+TOGGLE_ACCESS_OFF: Most kereskedhetsz olyan boltokban, amelyekhez hozzГЎfГ©rsz
