@@ -75,7 +75,7 @@ Data:
 
     #The database type to use. Current options: MySQL, Maria, YAML.
     #You may use maria-outdated for MariaDB versions less than 10.7.0 or MySQL versions less than 8.0.0.
-    Type: "yaml"
+    Type: "MySQL"
 
     #The prefix to use for TheNewEconomy SQL tables
     Prefix: "tne_"
@@ -87,7 +87,7 @@ Data:
     SQL:
 
       #The SQL host
-      Host: "localhost"
+      Host: "127.0.0.1"
 
       #Whether to use SSL.
       SSL: false
@@ -99,13 +99,13 @@ Data:
       Port: 3306
 
       #The SQL database
-      DB: "TheNewEconomy"
+      DB: "serverminecraft"
 
       #Your SQL user's name
-      User: "user"
+      User: "root"
 
       #Your SQL user's password
-      Password: "password"
+      Password: "root"
 
   #All configurations relating to the data auto saver
   AutoSaver:

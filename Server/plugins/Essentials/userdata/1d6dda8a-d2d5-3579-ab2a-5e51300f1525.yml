@@ -3,7 +3,7 @@ teleportauto: false
 godmode: false
 muted: false
 jailed: false
-ip-address: 127.0.0.1
+ip-address: 192.168.0.128
 afk: false
 socialspy: false
 npc: false
@@ -16,8 +16,8 @@ timestamps:
   mute: 0
   jail: 0
   onlinejail: 0
-  logout: 1717854608677
-  login: 1717849263509
+  logout: 1718899915230
+  login: 1718899911290
 money: '0'
 last-account-name: ZALIKS
 lastlocation:
@@ -29,10 +29,10 @@ lastlocation:
   yaw: 0.0
   pitch: 0.0
 logoutlocation:
-  world: 90290a5c-7df7-48cb-9637-67d6313280a9
+  world: 90290d0a-5c7d-f748-cb96-3767d6313280
   world-name: world
   x: -268.30000001192093
   y: 64.0
   z: 381.5504492923398
-  yaw: 1.498046875
-  pitch: 22.050153732299805
+  yaw: -85.80200958251953
+  pitch: 16.800132751464844

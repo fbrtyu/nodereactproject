@@ -1,16 +1,31 @@
 "use strict";
+import { Router, Response, Request } from "express";
 import { connection } from '../../databases/MySQL/mysqlconnect';
+import bcrypt from 'bcrypt';
+var jwt = require('jsonwebtoken');
+require('dotenv').config({ path: `./config/.env` });
 
-export async function registration(login: string, password: string) {
+const saltRounds = 10;
+
+export async function registration(login: string, password: string, res: Response) {
+    var access_token = await jwt.sign({
+        exp: Math.floor(Date.now() / 1000) + (60 * 60 / 2),
+        login: login
+    }, process.env.SECRETACCESS);
+
+    var refresh_token = await jwt.sign({
+        exp: Math.floor(Date.now() / 1000) + (60 * 60),
+        login: login
+    }, process.env.SECRETREFRESH);
+
     try {
-        const [results, fields] = await (await connection).query(
-            'SELECT * FROM `jwt`'
-        );
-    
-        console.log(results);
-        //console.log(fields);
+        bcrypt.hash(password, saltRounds, async function (err, hash) {
+            const result = await (await connection).query('INSERT INTO `authme` (`username`, `realname`, `password`, `access_token`, `refresh_token`) VALUES(?, ?, ?, ?, ?)',
+                                                            [login.toLowerCase(), login, hash, access_token, refresh_token]);
+            res.send(JSON.stringify({"accessToken": access_token, "refreshToken": refresh_token}));
+        });
     } catch (err) {
         console.log(err);
+        res.sendStatus(500);
     }
-    console.log(login, password);
 }

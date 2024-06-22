@@ -252,12 +252,12 @@ purge:
   inactive-clan-days: 7
   unverified-clan-days: 2
 mysql:
-  username: ''
+  username: root
   host: localhost
   port: 3306
-  enable: false
-  password: ''
-  database: ''
+  enable: true
+  password: root
+  database: serverminecraft
 permissions:
   auto-group-groupname: false
   YourClanNameHere:
