@@ -1,4 +1,7 @@
 "use strict"
+
+import renderLkPage from "../components/lk";
+
 export async function registration(login: string, password: string) {
     const data = {
         login: login,
@@ -15,12 +18,12 @@ export async function registration(login: string, password: string) {
         body: JSON.stringify(data),
     });
 
-    console.log(response.status);
-
-    let tokens = await response.json();
-
-    localStorage.setItem('access_token', tokens.accessToken);
-    localStorage.setItem('refresh_token', tokens.refreshToken);
+    if (response.status == 200) {
+        let tokens = await response.json();
+        localStorage.setItem('access_token', tokens.accessToken);
+        localStorage.setItem('refresh_token', tokens.refreshToken);
+        renderLkPage();
+    }
 };
 
 export async function login(login: string = "", password: string = "", accessToken: string = "", refreshToken: string = "") {
@@ -30,8 +33,6 @@ export async function login(login: string = "", password: string = "", accessTok
         accessToken: accessToken,
         refreshToken: refreshToken
     };
-
-    console.log(data);
 
     const response = await fetch('http://localhost:7777/login', {
         method: "POST",
@@ -43,18 +44,13 @@ export async function login(login: string = "", password: string = "", accessTok
         body: JSON.stringify(data),
     });
 
-    console.log(response.status);
-
     let tokens = await response.json();
 
-    localStorage.setItem('access_token', tokens.accessToken);
-    localStorage.setItem('refresh_token', tokens.refreshToken);
-
-    // let tokens = await response.json();
-
-    // console.log(tokens);
-
-    // localStorage.setItem('access_token', tokens.access_token);
-    // localStorage.setItem('refresh_token', tokens.refresh_token);
-    // localStorage.getItem('test')
+    if (response.status == 200 && tokens.answer == "accessToken OK") {
+        renderLkPage();
+    } else {
+        localStorage.setItem('access_token', tokens.accessToken);
+        localStorage.setItem('refresh_token', tokens.refreshToken);
+        renderLkPage();
+    }
 };

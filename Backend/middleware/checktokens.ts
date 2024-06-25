@@ -1,7 +1,7 @@
 'use strict'
 import { Router, Response, Request } from "express";
 var jwt = require('jsonwebtoken');
-import { connection } from '../../databases/MySQL/mysqlconnect';
+import { connection } from '../databases/MySQL/mysqlconnect';
 import bcrypt from 'bcrypt';
 require('dotenv').config({ path: `./config/.env` });
 
@@ -11,15 +11,17 @@ export async function checkTokens(login: string = "", password: string = "", acc
 
     let stop = false;
 
+    let error = "";
+
     if (accessToken != "" && stop == false) {
         try {
             jwt.verify(accessToken, process.env.SECRETACCESS);
             stop = true;
-            // answer to server OK
-            //res.sendStatus(200);
+            res.send(JSON.stringify({answer: "accessToken OK"}));
         } catch (err) {
             accessTokenFlag = false;
             console.log(err);
+            error = "Error accessToken!";
         }
     }
 
@@ -50,6 +52,7 @@ export async function checkTokens(login: string = "", password: string = "", acc
         } catch (err) {
             refreshTokenFlag = false;
             console.log(err);
+            error = "Error refreshToken!";
         }
     }
 
@@ -58,10 +61,8 @@ export async function checkTokens(login: string = "", password: string = "", acc
             const [results, fields] = await (await connection).query({ sql: 'SELECT `password` FROM `authme` WHERE `realname` = ' + '"' + login + '"' });
             const answer = results as any;
             const passwordHash = answer[0].password;
-            console.log(passwordHash);
 
             bcrypt.compare(password, passwordHash, async function (err, result) {
-                console.log(result);
                 if (result == true) {
                     // Generate new jwt and send it to client
                     var access_token = await jwt.sign({
@@ -74,17 +75,14 @@ export async function checkTokens(login: string = "", password: string = "", acc
                         login: login
                     }, process.env.SECRETREFRESH);
 
-                    const result = await(await connection).query('UPDATE `authme` SET `access_token` = ?, `refresh_token` = ? WHERE `realname` = ?', [access_token, refresh_token, login]);
+                    const result = await (await connection).query('UPDATE `authme` SET `access_token` = ?, `refresh_token` = ? WHERE `realname` = ?', [access_token, refresh_token, login]);
 
                     res.send(JSON.stringify({ "accessToken": access_token, "refreshToken": refresh_token }));
-
-                    //res.sendStatus(200);
-                } else {
-                    console.log("Wrong Password");
-                    //res.sendStatus(404);
+                } else if (result == false) {
+                    error = "Error login or password!";
+                    res.send(error);
                 }
             });
-            //(await connection).destroy();
         } catch (err) {
             console.log(err);
         }

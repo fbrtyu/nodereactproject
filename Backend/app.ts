@@ -4,6 +4,7 @@ import cors from 'cors';
 require('dotenv').config({ path: `./config/.env` });
 import compression from 'compression';
 import { authRouter } from './api/routers/authRouter';
+import { checkTokens } from "./middleware/checktokens"
 
 const host: string = process.env.HOST as string;
 const port: number = process.env.PORT as unknown as number;
@@ -17,6 +18,16 @@ const app = express();
 app.use(cors(corsOptions));
 app.use(express.json());
 app.use(compression());
+
+app.use(function (request, response, next) {
+    if (request.url == "/registration") {
+        next();
+    } else {
+        checkTokens(request.body.login, request.body.password, request.body.accessToken, request.body.refreshToken, response);
+        next();
+    }
+});
+
 app.use(authRouter);
 
 app.listen(port as number, host as string, () => console.log(`Server listens http://${host}:${port}`));
