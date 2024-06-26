@@ -1,9 +1,0 @@
-dithering: true
-glow: false
-cache-maps: true
-
-dynamic-frame-spawn:
-  # Frames will only be sent when the player gets closer to them.
-  enabled: true
-  section-shift: 7
-  grid-size: 3

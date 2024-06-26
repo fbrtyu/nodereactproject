@@ -1,8 +1,0 @@
-%YAML 1.1
----
-'192_168_0_128':
-- fbrtyu
-- ZALIKS
-'127_0_0_1':
-- ZALIKS
-- ZALIKSPLAY

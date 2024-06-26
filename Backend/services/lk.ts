@@ -8,6 +8,7 @@ export async function lk(accessToken: string, res: Response) {
     };
 
     //Get data from db
+    
 
     userData.login = "1231321";
     userData.data = "sdasdasd";
