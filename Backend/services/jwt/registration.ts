@@ -20,8 +20,8 @@ export async function registration(login: string, password: string, res: Respons
 
     try {
         bcrypt.hash(password, saltRounds, async function (err, hash) {
-            const result = await (await connection).query('INSERT INTO `authme` (`username`, `realname`, `password`, `access_token`, `refresh_token`) VALUES(?, ?, ?, ?, ?)',
-                                                            [login.toLowerCase(), login, hash, access_token, refresh_token]);
+            const result = await (await connection).query('INSERT INTO `user_jwt` (`login`, `password`, `access_token`, `refresh_token`) VALUES(?, ?, ?, ?)',
+                                                            [login, hash, access_token, refresh_token]);
             res.send(JSON.stringify({"accessToken": access_token, "refreshToken": refresh_token}));
         });
     } catch (err) {

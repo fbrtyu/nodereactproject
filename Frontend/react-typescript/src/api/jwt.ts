@@ -44,13 +44,17 @@ export async function login(login: string = "", password: string = "", accessTok
         body: JSON.stringify(data),
     });
 
-    let tokens = await response.json();
+    let answer = await response.json();
 
-    if (response.status == 200 && tokens.answer == "accessToken OK") {
+    console.log(answer);
+
+    if (answer.status == "ok") {
         renderLkPage();
-    } else {
-        localStorage.setItem('access_token', tokens.accessToken);
-        localStorage.setItem('refresh_token', tokens.refreshToken);
+    } else if (answer.status == "upd") {
+        localStorage.setItem('access_token', answer.accessToken);
+        localStorage.setItem('refresh_token', answer.refreshToken);
         renderLkPage();
+    } else if (answer.status == "err") {
+        console.log("Ошибка входа");
     }
 };

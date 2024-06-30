@@ -15,9 +15,7 @@ function LkPage() {
 
     useEffect(() => {
         async function getUserData() {
-            setAccessToken(localStorage.getItem(localStorage.key(0) as string) as string);
-            userData = await lk(accessToken);
-            console.log(userData);
+            userData = await lk(localStorage.getItem(localStorage.key(0) as string) as string);
             setUserLogin(userData.login);
         };
         getUserData();

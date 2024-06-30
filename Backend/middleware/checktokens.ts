@@ -11,60 +11,72 @@ export async function checkTokens(login: string = "", password: string = "", acc
 
     let stop = false;
 
-    let error = "";
+    let ans = {
+        status: "",
+        accessToken: "",
+        refreshToken: ""
+    }
 
-    if (accessToken != "" && stop == false) {
+    if (accessToken != null && stop == false) {
         try {
-            jwt.verify(accessToken, process.env.SECRETACCESS);
+            await jwt.verify(accessToken, process.env.SECRETACCESS);
             stop = true;
-            res.send(JSON.stringify({answer: "accessToken OK"}));
+            ans.status = "ok" as string;
+            return JSON.stringify(ans);
         } catch (err) {
             accessTokenFlag = false;
             console.log(err);
-            error = "Error accessToken!";
+            ans.status = "err" as string;
         }
     }
 
-    if (refreshToken != "" && stop == false) {
+    if (refreshToken != null && stop == false) {
         try {
-            jwt.verify(refreshToken, process.env.SECRETREFRESH);
+            await jwt.verify(refreshToken, process.env.SECRETREFRESH);
             stop = true;
 
             // search login in DB
-            const [results, fields] = await (await connection).query({ sql: 'SELECT `realname` FROM `authme` WHERE `refresh_token` = ' + '"' + refreshToken + '"' });
+            const [results, fields] = await (await connection).query({ sql: 'SELECT `login` FROM `user_jwt` WHERE `refresh_token` = ' + '"' + refreshToken + '"' });
             const answer = results as any;
 
             // update all tokens
             var access_token = await jwt.sign({
                 exp: Math.floor(Date.now() / 1000) + (60 * 60 / 2),
-                login: answer[0].realname
+                login: answer[0].login
             }, process.env.SECRETACCESS);
 
             var refresh_token = await jwt.sign({
                 exp: Math.floor(Date.now() / 1000) + (60 * 60),
-                login: answer[0].realname
+                login: answer[0].login
             }, process.env.SECRETREFRESH);
 
-            const result = await (await connection).query('UPDATE `authme` SET `access_token` = ?, `refresh_token` = ? WHERE `realname` = ?', [access_token, refresh_token, login]);
+            const result = await (await connection).query('UPDATE `user_jwt` SET `access_token` = ?, `refresh_token` = ? WHERE `login` = ?', 
+                                                            [access_token, refresh_token, answer[0].login]);
 
-            res.send(JSON.stringify({ "accessToken": access_token, "refreshToken": refresh_token }));
-
+            ans.status = "upd" as string;
+            ans.accessToken = access_token as string;
+            ans.refreshToken = refresh_token as string;
+            return JSON.stringify(ans);
         } catch (err) {
             refreshTokenFlag = false;
             console.log(err);
-            error = "Error refreshToken!";
+            ans.status = "err" as string;
         }
     }
 
-    if (accessTokenFlag == false && refreshTokenFlag == false && stop == false) {
-        try {
-            const [results, fields] = await (await connection).query({ sql: 'SELECT `password` FROM `authme` WHERE `realname` = ' + '"' + login + '"' });
-            const answer = results as any;
-            const passwordHash = answer[0].password;
+    if ((ans.status == "") || (ans.status == "err" && login != null && password != null)) {
+        if (login == "" || password == "") {
+            ans.status = "err";
+            return JSON.stringify(ans);
+        } else {
+            try {
+                const [results, fields] = await (await connection).query({ sql: 'SELECT `password` FROM `user_jwt` WHERE `login` = ' + '"' + login + '"' });
+                const answer = results as any;
+                const passwordHash = await answer[0].password as string;
 
-            bcrypt.compare(password, passwordHash, async function (err, result) {
+                let result = await bcrypt.compare(password, passwordHash);
+
                 if (result == true) {
-                    // Generate new jwt and send it to client
                     var access_token = await jwt.sign({
                         exp: Math.floor(Date.now() / 1000) + (60 * 60 / 2),
                         login: login
@@ -75,16 +87,27 @@ export async function checkTokens(login: string = "", password: string = "", acc
                         login: login
                     }, process.env.SECRETREFRESH);
 
-                    const result = await (await connection).query('UPDATE `authme` SET `access_token` = ?, `refresh_token` = ? WHERE `realname` = ?', [access_token, refresh_token, login]);
+                    const result = await (await connection).query('UPDATE `user_jwt` SET `access_token` = ?, `refresh_token` = ? WHERE `login` = ?', 
+                                                                    [access_token, refresh_token, login]);
 
-                    res.send(JSON.stringify({ "accessToken": access_token, "refreshToken": refresh_token }));
+                    ans.status = "upd" as string;
+                    ans.accessToken = access_token as string;
+                    ans.refreshToken = refresh_token as string;
+                    return JSON.stringify(ans);
                 } else if (result == false) {
-                    error = "Error login or password!";
-                    res.send(error);
+                    ans.status = "err";
+                    return JSON.stringify(ans);
                 }
-            });
-        } catch (err) {
-            console.log(err);
+            } catch (err) {
+                ans.status = "err";
+                console.log(err);
+                return JSON.stringify(ans);
+            }
         }
+    }
+
+    if ((accessToken == "" && refreshToken == "" && login == "" && password == "") || (accessTokenFlag == false && refreshTokenFlag == false && stop == false)) {
+        ans.status = "err";
+        return JSON.stringify(ans);
     }
 }
