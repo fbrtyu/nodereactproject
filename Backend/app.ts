@@ -5,6 +5,7 @@ require('dotenv').config({ path: `./config/.env` });
 import compression from 'compression';
 import { authRouter } from './api/routers/authRouter';
 import { checkTokens } from "./middleware/checktokens";
+import { userSettingsRouter } from './api/routers/userSettingsRouter';
 
 const host: string = process.env.HOST as string;
 const port: number = process.env.PORT as unknown as number;
@@ -34,10 +35,12 @@ app.use(async function (request, response, next) {
         if (answerJSON.status == "ok") {
             return response.send(answerJSON);
         }
+    } else {
         next();
     }
 });
 
 app.use(authRouter);
+app.use(userSettingsRouter);
 
 app.listen(port as number, host as string, () => console.log(`Server listens http://${host}:${port}`));
