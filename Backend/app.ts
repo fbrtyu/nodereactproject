@@ -24,7 +24,7 @@ app.use(async function (request, response, next) {
     if (request.url == "/registration") {
         next();
     } else if (request.url == "/login") {
-        let answer = await checkTokens(request.body.login, request.body.password, request.body.accessToken, request.body.refreshToken, response) as any;
+        let answer = await checkTokens(request.body.login, request.body.password, request.body.accessToken, request.body.refreshToken) as any;
         let answerJSON = await JSON.parse(answer);
         if (answerJSON.status == "err") {
             return response.send(answerJSON);

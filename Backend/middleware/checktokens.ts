@@ -5,7 +5,7 @@ import { connection } from '../databases/MySQL/mysqlconnect';
 import bcrypt from 'bcrypt';
 require('dotenv').config({ path: `./config/.env` });
 
-export async function checkTokens(login: string = "", password: string = "", accessToken: string = "", refreshToken: string = "", res: Response) {
+export async function checkTokens(login: string = "", password: string = "", accessToken: string = "", refreshToken: string = "") {
     let accessTokenFlag = true;
     let refreshTokenFlag = true;
 
