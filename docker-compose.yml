@@ -1,0 +1,46 @@
+services:
+  frontend:
+    container_name: frontend
+    build:
+      context: ./Frontend/
+      dockerfile: Dockerfile.frontend
+    ports:
+      - "81:80"
+    depends_on:
+      - backend
+    networks:
+      - internet
+      - localnet
+
+  backend:
+    container_name: backend
+    build:
+      context: ./Backend/
+      dockerfile: Dockerfile.backend
+    ports:
+      - "7777:7777"
+    depends_on:
+      - database
+    networks:
+      - localnet
+
+  database:
+      env_file: "database.env"
+      container_name: database
+      build:
+        context: ./MySQL/
+        dockerfile: Dockerfile.database
+      environment:
+        MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
+      ports:
+        - "3306:3306"
+      networks:
+        - localnet
+
+networks:
+  internet:
+    name: internet
+    driver: bridge
+  localnet:
+    name: localnet
+    driver: bridge

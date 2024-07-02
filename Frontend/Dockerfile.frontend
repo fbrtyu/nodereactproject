@@ -1,0 +1,11 @@
+FROM node:alpine AS builder
+RUN apk add --update npm
+WORKDIR /app
+COPY . .
+RUN npm ci
+RUN npm run build
+
+FROM nginx:alpine AS runner
+EXPOSE 80
+COPY --from=builder /app/build /usr/share/nginx/html
+CMD ["nginx","-g","daemon off;"]

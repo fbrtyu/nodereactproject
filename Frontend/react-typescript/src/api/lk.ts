@@ -1,10 +1,12 @@
 'use strict'
+//import { env } from "process";
+
 export async function lk(accessToken: string) {
     const data = {
         accessToken: accessToken
     };
 
-    const response = await fetch('http://localhost:7777/lk', {
+    const response = await fetch('http://' + 'backend' + ':' + '7777' + '/lk', {
         method: "POST",
         mode: "cors",
         headers: {

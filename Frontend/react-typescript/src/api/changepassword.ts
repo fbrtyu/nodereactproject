@@ -1,4 +1,6 @@
 "use strict"
+//import { env } from "process";
+
 export async function changePassword(accessToken: string, refreshToken: string, newPassword: string, oldPassword: string) {
     const data = {
         accessToken: accessToken,
@@ -7,7 +9,7 @@ export async function changePassword(accessToken: string, refreshToken: string, 
         oldPassword: oldPassword
     };
 
-    const response = await fetch('http://localhost:7777/changepassword', {
+    const response = await fetch('http://' + "backend" + ':' + "7777" + '/changepassword', {
         method: "POST",
         mode: "cors",
         headers: {
