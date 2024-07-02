@@ -2,12 +2,12 @@ services:
   frontend:
     container_name: frontend
     build:
-      context: ./Frontend/
+      context: ./Frontend/react-typescript/
       dockerfile: Dockerfile.frontend
     ports:
       - "81:80"
     depends_on:
-      - backend
+      - database
     networks:
       - internet
       - localnet

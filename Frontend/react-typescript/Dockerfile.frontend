@@ -1,4 +1,4 @@
-FROM node:alpine AS builder
+FROM alpine AS builder
 RUN apk add --update npm
 WORKDIR /app
 COPY . .

@@ -8,7 +8,7 @@ export async function registration(login: string, password: string) {
         password: password
     };
 
-    const response = await fetch('http://' + "backend" + ':' + "7777" + '/registration', {
+    const response = await fetch('http://' + "localhost" + ':' + "7777" + '/registration', {
         method: "POST",
         mode: "cors",
         headers: {
@@ -34,7 +34,7 @@ export async function login(login: string = "", password: string = "", accessTok
         refreshToken: refreshToken
     };
 
-    const response = await fetch('http://' + "backend" + ':' + "7777" + '/login', {
+    const response = await fetch('http://' + "localhost" + ':' + "7777" + '/login', {
         method: "POST",
         mode: "cors",
         headers: {

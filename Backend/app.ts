@@ -6,6 +6,14 @@ import compression from 'compression';
 import { authRouter } from './api/routers/authRouter';
 import { checkTokens } from "./middleware/checktokens";
 import { userSettingsRouter } from './api/routers/userSettingsRouter';
+//import os from 'os';
+
+// const localIP = Object.values(os.networkInterfaces())
+//     .flat()
+//     .find(iface => iface?.family === 'IPv4' && !iface.internal)
+//     ?.address;
+
+// console.log(localIP);
 
 const host: string = process.env.HOST as string;
 const port: number = process.env.PORT as unknown as number;
@@ -43,4 +51,4 @@ app.use(async function (request, response, next) {
 app.use(authRouter);
 app.use(userSettingsRouter);
 
-app.listen(port as number, host as string, () => console.log(`Server listens http://${host}:${port}`));
+app.listen(port as number, () => console.log(`Server listens http://${host}:${port}`));
