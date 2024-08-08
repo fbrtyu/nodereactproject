@@ -37,6 +37,20 @@ services:
       networks:
         - localnet
 
+  streamserver:
+    container_name: streamserver
+    build:
+      context: ./StreamServer/
+      dockerfile: Dockerfile.streamserver
+    ports:
+      - "4444:4444"
+      - "88:87"
+    depends_on:
+      - database
+    networks:
+      - internet
+      - localnet
+
 networks:
   internet:
     name: internet

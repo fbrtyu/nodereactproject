@@ -1,0 +1,27 @@
+# FROM golang:alpine
+# WORKDIR /app
+# # Download Go modules
+# # COPY go.mod go.sum ./
+# COPY . .
+# # RUN go mod download
+# # Copy the source code. Note the slash at the end, as explained in
+# # COPY *.go ./
+# # Build
+# RUN CGO_ENABLED=0 GOOS=linux go build -o /docker-gs-ping
+# EXPOSE 4444
+# # Run
+# CMD ["/docker-gs-ping"]
+
+FROM golang:1.21.4
+EXPOSE 4444
+WORKDIR /usr/src/app
+COPY . .
+CMD go run main.go
+
+FROM nginx:alpine
+EXPOSE 87
+RUN apk update
+RUN apk upgrade
+RUN apk add nginx-mod-rtmp
+RUN apk add ffmpeg
+CMD ["nginx","-g","daemon off;"]
