@@ -1,0 +1,7 @@
+FROM nginx:alpine
+EXPOSE 87
+RUN apk update
+RUN apk upgrade
+RUN apk add nginx-mod-rtmp
+RUN apk add ffmpeg
+CMD ["nginx","-g","daemon off;"]

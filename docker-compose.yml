@@ -44,12 +44,31 @@ services:
       dockerfile: Dockerfile.streamserver
     ports:
       - "4444:4444"
-      - "88:87"
     depends_on:
       - database
     networks:
       - internet
       - localnet
+    volumes:
+      - "videos:/var/lib/docker/volumes/videos/_data"
+
+  nginxserver:
+      container_name: nginxserver
+      build:
+        context: ./NginxServer/
+        dockerfile: Dockerfile.nginxserver
+      ports:
+        - "88:87"
+      depends_on:
+        - database
+      networks:
+        - internet
+        - localnet
+      volumes:
+      - "videos:/var/lib/docker/volumes/videos/_data"
+
+volumes:
+  videos:
 
 networks:
   internet:
