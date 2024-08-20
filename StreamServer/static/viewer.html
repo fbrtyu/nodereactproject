@@ -35,6 +35,7 @@
     <button onclick="stopvideo()">Остановить видео и скачать</button>
 
     <script type="text/javascript">
+        let f = false;
         document.cookie = "streamid=secret";
         // let a = document.getElementById('my-video');
         // a.currentTime = 5;
@@ -67,6 +68,11 @@
 
             //Событие окончания добавления данных в буффер. И без этого работает.
             sourceBuffer.addEventListener("updateend", async () => {
+                //Тут необходимо правильно реализовать логику записи данных в буффер,
+                //иначе через некоторое время воспроизведение видео выдаст ошибку,
+                //что sourceBuffer is not null
+                //как понимаю, то на каком-то моменте оно не успевает записать новые данные, так как ещё записываются прошлые
+                f = false;
                 // if (mediaSource.readyState == 'open') {
                 //     mediaSource.endOfStream();
                 //     video.play();
@@ -91,8 +97,15 @@
             reader.onload = async function (evt) {
                 //await tempBuf.push(evt.target.result);
                 //await sourceBuffer.appendBuffer(tempBuf.pop());
-                await sourceBuffer.appendBuffer(evt.target.result); //Так тоже работает, но мб буффер в будущем будет нужен
-                count++; //Считчик для знания какой это по счёту чанк
+
+                if(f == false) {
+                    f = true;
+                    await sourceBuffer.appendBuffer(evt.target.result); //Так тоже работает, но мб буффер в будущем будет нужен
+                    count++; //Считчик для знания какой это по счёту чанк
+                }
+
+                //await sourceBuffer.appendBuffer(evt.target.result); //Так тоже работает, но мб буффер в будущем будет нужен
+                //count++; //Считчик для знания какой это по счёту чанк
             };
 
             var buf = await response.arrayBuffer;

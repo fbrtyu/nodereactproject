@@ -11,6 +11,8 @@ function App() {
       <h1>Привет</h1>
       <a onClick={() => {renderRegistrationPage() as any}}>Регистрация</a>
       <a onClick={() => {renderLoginPage() as any}}>Вход</a>
+      <a href='http://localhost:4444/viewer.html'>Смотреть стрим</a>
+      <a href='http://localhost:4444/streamer.html'>Начать стрим</a>
     </div>
   );
 }
